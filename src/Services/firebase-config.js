@@ -16,13 +16,12 @@ const storage = getStorage();
 
 export const listEve = (folder) => {
   const storageRef = ref(storage, folder);
-
   const urlsArray = [];
+
   listAll(storageRef)
     .then((res) => {
       res.prefixes.forEach((folderRef) => {
-        console.log(`folder: ${folderRef}`);
-        // You may call listAll() recursively on them.
+        //console.log(`folder: ${folderRef}`);
       });
       res.items.forEach((itemRef) => {
         getDownloadURL(itemRef).then((url) => {
@@ -34,7 +33,6 @@ export const listEve = (folder) => {
       console.log(error);
     });
 
-  console.log(urlsArray);
   return urlsArray;
 };
 
