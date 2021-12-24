@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from '../../Assets/logo.jpg';
-import { NavContainer, NavElements, Logo } from './NavElements';
+import { NavContainer, NavElements, Title, Avatar } from './NavElements';
 
 function Nav() {
   return (
     <NavContainer>
       <NavElements>
-        <Logo to="/">
+        <Title>Combat Arms Timeline by bllk-</Title>
+        <Avatar to="/">
           <img src={logo} alt="logo" />
-        </Logo>
+        </Avatar>
       </NavElements>
     </NavContainer>
   );

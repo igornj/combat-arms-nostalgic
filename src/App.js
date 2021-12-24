@@ -6,6 +6,8 @@ import GlobalStyled from './styles/globalStyles';
 //Components
 import Nav from './Components/Nav';
 import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <GlobalStyled />
       <Nav />
       <Header />
+      <Main />
+      <Footer />
     </Router>
   );
 }

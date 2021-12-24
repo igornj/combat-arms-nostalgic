@@ -11,9 +11,9 @@ import { imagesUrls } from './imageUrls';
 function Header() {
   const [urlsArray, seturlsArray] = useState([]);
 
-  useEffect(() => {
-    seturlsArray(imagesUrls);
-  }, []); // <-
+  // useEffect(() => {
+  //   seturlsArray(imagesUrls);
+  // }, []); // <-
 
   // const handleUrl = async () => {
   //   console.log(seturlsArray(listEve('combatarms-lifetime/')));
@@ -21,9 +21,10 @@ function Header() {
 
   return (
     <HeaderContainer>
-      {urlsArray.map((image, index) => {
+      {/* {urlsArray.map((image, index) => {
         return <img key={index} src={image} alt="combat-arms" />;
-      })}
+      })} */}
+      <div />
     </HeaderContainer>
   );
 }

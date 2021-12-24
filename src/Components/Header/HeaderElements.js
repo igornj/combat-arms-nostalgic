@@ -5,6 +5,14 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
+  div {
+    width: 900px;
+    height: 500px;
+    background: #0a0a0a;
+    margin: 0 2rem 0 2rem;
+  }
 
   img {
     width: 60%;
