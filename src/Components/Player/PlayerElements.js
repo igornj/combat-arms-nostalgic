@@ -32,6 +32,10 @@ export const Info = styled.div`
     font-size: 15px;
     margin-right: 0.5rem;
   }
+
+  input {
+    margin-right: 0.5rem;
+  }
 `;
 
 export const Controls = styled.div`
@@ -58,8 +62,33 @@ export const Next = styled(BiSkipNext)`
   color: #0a0a0a;
   cursor: pointer;
 `;
-export const VolumeMinus = styled(BsFillVolumeOffFill)``;
-export const VolumePlus = styled(BsFillVolumeUpFill)``;
-export const VolumeRange = styled.input`
+
+export const VolumeControl = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  position: relative;
+  width: 40px;
+  height: 400px;
   cursor: pointer;
+
+  :hover input {
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+
+  input {
+    cursor: pointer;
+    opacity: 0;
+    color: #0a0a0a;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 17.5rem;
+    right: -2.2rem;
+  }
+`;
+
+export const VolumeButton = styled(BsFillVolumeUpFill)`
+  cursor: pointer;
+  color: #0a0a0a;
 `;

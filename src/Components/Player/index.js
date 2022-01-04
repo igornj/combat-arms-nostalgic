@@ -9,9 +9,8 @@ import {
   Pause,
   Prev,
   Next,
-  VolumePlus,
-  VolumeRange,
-  VolumeMinus,
+  VolumeControl,
+  VolumeButton,
 } from './PlayerElements';
 
 //songs and tracks details
@@ -24,16 +23,19 @@ function Player() {
   const [songIndex, setSongIndex] = useState(0);
 
   const audioPlayer = useRef();
+  const progressBar = useRef();
+  const animationRef = useRef();
 
   //Setting the duration
   useEffect(() => {
     const seconds = Math.floor(audioPlayer.current.duration);
     setDuration(seconds);
+    progressBar.current.max = seconds;
   }, [songIndex, audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
   //When the audio ends, play the next one automatically
   useEffect(() => {
-    audioPlayer?.current?.addEventListener('ended', () => handleAudio);
+    audioPlayer?.current?.addEventListener('ended', () => nextSong());
     return () => {
       audioPlayer?.current?.removeEventListener('ended', handleAudio);
     };
@@ -45,14 +47,25 @@ function Player() {
 
     if (!isPlaying) {
       audioPlayer.current.play();
+      animationRef.current = requestAnimationFrame(whilePlaying)
     } else {
       audioPlayer.current.pause();
+      cancelAnimationFrame(animationRef.current);
     }
   };
+
+
+  const whilePlaying = () => {
+    progressBar.current.value = audioPlayer.current.currentTime;
+    changePlayerCurrentTime();
+    animationRef.current = requestAnimationFrame(whilePlaying);
+  };
+
 
   const handleVolume = (e) => {
     audioPlayer.current.volume = e.currentTarget.value / 100;
   };
+
 
   const prevSong = async () => {
     if (songIndex > 0 && songIndex < 5) {
@@ -77,16 +90,25 @@ function Player() {
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
     }
+  };
 
-  }
 
+  // const changePlayerCurrentTime = () => {
+  //   if (!isPlaying) return;
+  //   setCurrentTime(audioPlayer?.current?.currentTime);
+  // }
+  // setInterval(changePlayerCurrentTime, 1000);
 
   const changePlayerCurrentTime = () => {
-    if (!isPlaying) return;
-    setCurrentTime(audioPlayer?.current?.currentTime);
-  }
-  setInterval(changePlayerCurrentTime, 1000);
+    //progressBar.current.style.setProperty('--seek-before-width', `${progressBar.current.value / duration * 100}%`)
+    setCurrentTime(progressBar.current.value);
+  };
 
+
+  const changeRange = () => {
+    audioPlayer.current.currentTime = progressBar.current.value;
+    changePlayerCurrentTime();
+  };
 
 
 
@@ -104,7 +126,7 @@ function Player() {
       <Info>
         <audio ref={audioPlayer} src={tracks[songIndex].src} preload="metadata"></audio>
         <div>{calculateTime(currentTime)}</div>
-        <div>-</div>
+        <input type="range" defaultValue="0" ref={progressBar} onChange={changeRange} />
         <div >{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
         <div >{tracks[songIndex].title}</div>
       </Info>
@@ -119,9 +141,12 @@ function Player() {
         )}
         <Next onClick={nextSong} />
 
-        <VolumeMinus />
-        <VolumeRange onChange={(e) => handleVolume(e)} type="range" defaultValue={1} />
-        <VolumePlus />
+        <VolumeControl>
+          <VolumeButton />
+          <input onChange={(e) => handleVolume(e)} type="range" defaultValue="5" />
+
+        </VolumeControl>
+
       </Controls>
 
     </PlayerContainer>
