@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import {
   FooContainer,
@@ -15,17 +14,21 @@ function Footer() {
     <FooContainer>
       <Socials>
         <h1>Sociais</h1>
-        <Link to="">
+        <a
+          href="https://www.instagram.com/igor_nj/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Instagram />
-        </Link>
+        </a>
 
-        <Link to="">
+        <a href="https://twitter.com/fosade_" target="_blank" rel="noreferrer">
           <Twitter />
-        </Link>
+        </a>
 
-        <Link to="">
+        <a href="https://github.com/igornj" target="_blank" rel="noreferrer">
           <Git />
-        </Link>
+        </a>
       </Socials>
 
       <Nicks>

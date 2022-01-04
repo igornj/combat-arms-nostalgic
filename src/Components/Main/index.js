@@ -16,7 +16,7 @@ function Main() {
     setToggleImg(!toggleImg);
   };
 
-  console.log(toggleImg);
+  //console.log(toggleImg);
 
   return (
     <MainContainer>
