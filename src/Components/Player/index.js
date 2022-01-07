@@ -111,7 +111,6 @@ function Player() {
   };
 
 
-
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
     const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
@@ -120,9 +119,9 @@ function Player() {
     return `${returnedMinutes}:${returnedSeconds}`;
   };
 
+
   return (
     <PlayerContainer>
-
       <Info>
         <audio ref={audioPlayer} src={tracks[songIndex].src} preload="metadata"></audio>
         <div>{calculateTime(currentTime)}</div>
@@ -130,7 +129,6 @@ function Player() {
         <div >{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
         <div >{tracks[songIndex].title}</div>
       </Info>
-
 
       <Controls>
         <Prev onClick={prevSong} />
@@ -144,9 +142,7 @@ function Player() {
         <VolumeControl>
           <VolumeButton />
           <input onChange={(e) => handleVolume(e)} type="range" defaultValue="5" />
-
         </VolumeControl>
-
       </Controls>
 
     </PlayerContainer>

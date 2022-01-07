@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 require('dotenv').config();
 
 const AWS = require('aws-sdk');
@@ -13,31 +14,23 @@ const s3 = new AWS.S3({
   Bucket: BUCKET_NAME,
 });
 
-const params = {
-  Bucket: BUCKET_NAME,
-  Prefix: 'Upper_data_base/',
+// const params = {
+//   Bucket: 'combatarms-lifetime-images',
+//   Prefix: 'combatarms-lifetime-images/',
+// };
+
+exports.handler = async (event) => {
+  const allKeys = await getAllKeys({ Bucket: BUCKET_NAME });
+  return allKeys;
 };
 
-module.exports.readFiles = async function () {
-  try {
-    const s3Data = await s3Files();
-    return s3Data;
-  } catch (e) {
-    console.log(`Faiou: ${e}`);
+async function getAllKeys(params, allKeys = []) {
+  const response = await s3.listObjectsV2(params).promise();
+  response.Contents.forEach((obj) => allKeys.push(obj.Key));
+
+  if (response.NextContinuationToken) {
+    params.ContinuationToken = response.NextContinuationToken;
+    await getAllKeys(params, allKeys); // RECURSIVE CALL
   }
-};
-
-const arrayFilesS3 = [];
-const s3Files = () => {
-  return new Promise(function (resolve, reject) {
-    s3.listObjectsV2(params, function (err, data) {
-      if (err) reject(err);
-
-      data.Contents.forEach(function (obj) {
-        arrayFilesS3.push(obj.Key);
-
-        resolve(arrayFilesS3);
-      });
-    });
-  });
-};
+  return allKeys;
+}
