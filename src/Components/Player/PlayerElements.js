@@ -1,12 +1,6 @@
-/* eslint-disable no-unused-vars */
 import styled from 'styled-components';
-import {
-  BsPlayFill,
-  BsPauseFill,
-  BsFillVolumeUpFill,
-  BsFillVolumeOffFill,
-} from 'react-icons/bs';
-import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
+import { BsPlayFill, BsPauseFill, BsFillVolumeUpFill } from 'react-icons/bs';
+import { BiSkipPrevious, BiSkipNext, BiShuffle } from 'react-icons/bi';
 
 export const PlayerContainer = styled.div`
   background: #fff;
@@ -59,6 +53,13 @@ export const Prev = styled(BiSkipPrevious)`
   cursor: pointer;
 `;
 export const Next = styled(BiSkipNext)`
+  color: #0a0a0a;
+  cursor: pointer;
+  :active {
+    color: red;
+  }
+`;
+export const Shuffle = styled(BiShuffle)`
   color: #0a0a0a;
   cursor: pointer;
 `;

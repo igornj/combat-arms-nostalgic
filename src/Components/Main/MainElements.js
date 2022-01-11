@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #c0c0c0;
+  color: #0a0a0a;
   margin: 2rem;
 
   @media screen and (min-width: 1090px){

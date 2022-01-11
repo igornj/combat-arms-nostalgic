@@ -1,85 +1,68 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import logo from '../../Assets/logo.jpg';
 
 import {
   HeaderContainer,
-  Carousel,
-  RightArrow,
-  LeftArrow,
+  NavContainer,
+  NavElements,
+  NavMenu,
+  Socials,
+  Logo,
+  Twitter,
+  Instagram,
+  Github,
 } from './HeaderElements';
 
-//Components
-import Loading from '../Loading';
-
-//Images urls
-import images from './imageUrls';
-
 function Header() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-
-  const nextImg = () => {
-    if (imgIndex >= 0 && imgIndex < images.length) {
-      setImgIndex(imgIndex + 1);
-    } else if (imgIndex === 318) {
-      setImgIndex(0);
-    }
-  };
-
-  const prevImg = () => {
-    if (imgIndex > 0) {
-      setImgIndex(imgIndex - 1);
-    } else if (imgIndex === 0) {
-      setImgIndex(3);
-    }
-  };
-
   return (
     <>
-      <Loading isLoading={isLoading} />
+      <NavContainer>
+        <NavElements>
+          <Logo to="/">
+            <img src={logo} alt="logo" />
+          </Logo>
+          <NavMenu>
+            <Link to="/">
+              <h1>Inicio da rodada</h1>
+            </Link>
+
+            <Link to="/">
+              <h1>Videos</h1>
+            </Link>
+
+            <Link to="/">
+              <h1>Músicas</h1>
+            </Link>
+
+            <Link to="/">
+              <h1>Sobre</h1>
+            </Link>
+          </NavMenu>
+
+          <Socials>
+            <Link to="https://twitter.com/fosade_">
+              <Twitter />
+            </Link>
+
+            <Link to="https://www.instagram.com/igor_nj/">
+              <Instagram />
+            </Link>
+
+            <Link to="https://github.com/igornj">
+              <Github />
+            </Link>
+          </Socials>
+        </NavElements>
+      </NavContainer>
       <HeaderContainer>
-        <Carousel>
-          <LeftArrow onClick={prevImg} />
-          <img src={images[imgIndex].default} alt="combat-arms-img" />
-          <RightArrow onClick={nextImg} />
-        </Carousel>
+        <h1>COMBAT ARMS</h1>
+        <h2>TIMELINE</h2>
       </HeaderContainer>
     </>
   );
 }
 
 export default Header;
-
-// fetch('/reporter/current_user')
-// .then(response => response.json())
-// .then(files => _.chunk(files, 100).map(cache.addAll))
-// .catch(error => console.log(`Error caching file: ${error}`));
-
-// {data.forEach((element) => {
-//   <img src={element}></img>;
-// })}
-
-// useEffect(() => {
-//   seturlsArray(imagesUrls);
-// }, []); // <-
-
-// const handleUrl = async () => {
-//   console.log(seturlsArray(listEve('combatarms-lifetime/')));
-// };s
-
-{
-  /* {fileName.map((file, index) => {
-          <img
-            src={`https://combatarms-lifetime-images.s3.us-east-2.amazonaws.com/${file}`}
-            key={index}
-            alt="combat-arms"
-            onLoad={() => setIsLoading(false)}
-          />;
-        })} */
-}
-
-{
-  /* {urlsArray.map((image, index) => {
-        return <img key={index} src={image} alt="combat-arms" />;
-      })} */
-}
