@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Headerbg from '../../Assets/lucask4uz.png';
+import Headerbg from '../../Assets/lucask4uz3.png';
 
 import { Link } from 'react-router-dom';
 import {
@@ -73,12 +73,7 @@ export const Github = styled(AiOutlineGithub)`
 `;
 
 export const HeaderContainer = styled.div`
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(255, 255, 255, 0.5) 100%
-    ),
-    url(${Headerbg});
+  background-image: url(${Headerbg});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
