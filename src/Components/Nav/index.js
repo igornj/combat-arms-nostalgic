@@ -22,7 +22,7 @@ function Nav() {
         </Logo>
         <NavMenu>
           <Link to="/">
-            <h1>Inicio da rodada</h1>
+            <h1>Historia</h1>
           </Link>
 
           <Link to="/">

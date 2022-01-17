@@ -10,6 +10,7 @@ export const FooContainer = styled.div`
   margin-bottom: 2.5rem;
   background: #0a0a0a;
   position: relative;
+  bottom: 2.5rem;
 
   p {
     position: absolute;

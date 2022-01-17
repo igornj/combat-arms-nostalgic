@@ -6,11 +6,13 @@ function importAll(r) {
 }
 
 const songs = importAll(require.context('../../Assets/songs/', false));
+const cover = importAll(require.context('../../Assets/songs/covers/', false));
 
 const tracks = [
   {
     title: 'Far East Movement ft. Ryan Tedder - Rocketeer',
     src: songs[0].default,
+    img: cover[0],
   },
 
   {

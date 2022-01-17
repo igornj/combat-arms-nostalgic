@@ -5,6 +5,7 @@ import GlobalStyled from './styles/globalStyles';
 //Components
 import Header from './Components/Header';
 import About from './Components/About';
+import Player from './Components/Player';
 import Carousel from './Components/Carousel';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
@@ -18,6 +19,7 @@ function App() {
       <Carousel />
       <Main />
       <Footer />
+      <Player />
     </Router>
   );
 }

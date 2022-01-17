@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   PlayerContainer,
   Info,
+  ArtistLabel,
   Controls,
   Play,
   Pause,
@@ -151,13 +152,10 @@ function Player() {
 
   return (
     <PlayerContainer>
-      <Info>
-        <audio ref={audioPlayer} src={tracks[songIndex].src} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
-        <div>{calculateTime(currentTime)}</div>
-        <input type="range" defaultValue="0" ref={progressBar} onChange={changeRange} />
-        <div >{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+
+      <ArtistLabel>
         <div >{tracks[songIndex].title}</div>
-      </Info>
+      </ArtistLabel>
 
       <Controls>
         <Shuffle onClick={shuffledSong} />
@@ -174,6 +172,14 @@ function Player() {
           <input onChange={(e) => handleVolume(e)} type="range" defaultValue="5" />
         </VolumeControl>
       </Controls>
+
+      <Info>
+        <audio ref={audioPlayer} src={tracks[songIndex].src} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
+        <div>{calculateTime(currentTime)}</div>
+        <input type="range" defaultValue="0" ref={progressBar} onChange={changeRange} />
+        <div >{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+      </Info>
+
 
     </PlayerContainer>
   )
