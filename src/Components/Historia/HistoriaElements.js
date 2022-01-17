@@ -25,7 +25,7 @@ export const BlackContent = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   color: #f0f0f0;
-  margin-top: 2rem;
+  margin-top: 0rem;
 
 
   h1 {

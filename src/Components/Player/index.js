@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import {
   PlayerContainer,
+  AudioTimer,
   Info,
   ArtistLabel,
   Controls,
@@ -157,28 +158,32 @@ function Player() {
         <div >{tracks[songIndex].title}</div>
       </ArtistLabel>
 
-      <Controls>
-        <Shuffle onClick={shuffledSong} />
-        <Prev onClick={prevSong} />
-        {isPlaying ? (
-          <Pause onClick={handleAudio} />
-        ) : (
-          <Play onClick={handleAudio} />
-        )}
-        <Next onClick={nextSong} />
-
-        <VolumeControl>
-          <VolumeButton />
-          <input onChange={(e) => handleVolume(e)} type="range" defaultValue="5" />
-        </VolumeControl>
-      </Controls>
-
       <Info>
-        <audio ref={audioPlayer} src={tracks[songIndex].src} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
-        <div>{calculateTime(currentTime)}</div>
-        <input type="range" defaultValue="0" ref={progressBar} onChange={changeRange} />
-        <div >{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+        <Controls>
+          <Shuffle onClick={shuffledSong} />
+          <Prev onClick={prevSong} />
+          {isPlaying ? (
+            <Pause onClick={handleAudio} />
+          ) : (
+            <Play onClick={handleAudio} />
+          )}
+          <Next onClick={nextSong} />
+        </Controls>
+
+        <AudioTimer>
+          <audio ref={audioPlayer} src={tracks[songIndex].src} preload="metadata" onLoadedMetadata={onLoadedMetadata}></audio>
+          <div>{calculateTime(currentTime)}</div>
+          <input type="range" defaultValue="0" ref={progressBar} onChange={changeRange} />
+          <div >{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+        </AudioTimer>
       </Info>
+
+
+      <VolumeControl>
+        <VolumeButton />
+        <input onChange={(e) => handleVolume(e)} type="range" defaultValue="5" />
+      </VolumeControl>
+
 
 
     </PlayerContainer>

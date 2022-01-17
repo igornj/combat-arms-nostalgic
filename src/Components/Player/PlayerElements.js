@@ -1,15 +1,18 @@
 import styled from 'styled-components';
-import { BsPlayFill, BsPauseFill, BsFillVolumeDownFill } from 'react-icons/bs';
+import {
+  BsFillPauseCircleFill,
+  BsFillVolumeDownFill,
+  BsPlayCircleFill,
+} from 'react-icons/bs';
 import { BiSkipPrevious, BiSkipNext, BiShuffle } from 'react-icons/bi';
 
 export const PlayerContainer = styled.div`
-  background: #ababab;
-  color: #0a0a0a;
+  background: #383838;
+  color: white;
   width: 100%;
   height: 80px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
   position: fixed;
@@ -17,12 +20,76 @@ export const PlayerContainer = styled.div`
   z-index: 9999;
 `;
 
+export const ArtistLabel = styled.div`
+  color: white;
+  font-size: 0.7rem;
+  width: 40%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+`;
+
 export const Info = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: 11.2rem;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%);
+  width: 100%;
+`;
+
+export const Controls = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+`;
+
+export const Play = styled(BsPlayCircleFill)`
+  cursor: pointer;
+  color: white;
+  :hover {
+    transform: scale(1.1);
+  }
+`;
+export const Pause = styled(BsFillPauseCircleFill)`
+  cursor: pointer;
+  color: white;
+  :hover {
+    transform: scale(1.1);
+  }
+`;
+export const Prev = styled(BiSkipPrevious)`
+  color: #b5b5b5;
+  cursor: pointer;
+  :active {
+    color: white;
+  }
+`;
+export const Next = styled(BiSkipNext)`
+  color: #b5b5b5;
+  cursor: pointer;
+  :active {
+    color: white;
+  }
+`;
+export const Shuffle = styled(BiShuffle)`
+  color: #b5b5b5;
+  cursor: pointer;
+  font-size: 1.2rem;
+  :active {
+    color: white;
+  }
+`;
+
+export const AudioTimer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b5b5b5;
 
   div {
     font-size: 15px;
@@ -35,7 +102,7 @@ export const Info = styled.div`
 
   input[type='range'] {
     -webkit-appearance: none;
-    width: 100%;
+    width: 600px;
   }
   input[type='range']:focus {
     outline: none;
@@ -58,7 +125,10 @@ export const Info = styled.div`
     background: #ffffff;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -5px;
+    margin-top: -4.5px;
+    :hover {
+      transform: scale(1.2);
+    }
   }
   input[type='range']:focus::-webkit-slider-runnable-track {
     background: #367ebd;
@@ -119,54 +189,14 @@ export const Info = styled.div`
   }
 `;
 
-export const ArtistLabel = styled.div`
-  position: absolute;
-  left: 2rem;
-  width: 20%;
-  color: #0a0a0a;
-  font-size: 0.8rem;
-`;
-
-export const Controls = styled.div`
+export const VolumeControl = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.7rem;
-  margin-left: 1.5rem;
-`;
-
-export const Play = styled(BsPlayFill)`
-  cursor: pointer;
-  color: #0a0a0a;
-`;
-export const Pause = styled(BsPauseFill)`
-  cursor: pointer;
-  color: #0a0a0a;
-`;
-export const Prev = styled(BiSkipPrevious)`
-  color: #0a0a0a;
-  cursor: pointer;
-`;
-export const Next = styled(BiSkipNext)`
-  color: #0a0a0a;
-  cursor: pointer;
-  :active {
-    color: red;
-  }
-`;
-export const Shuffle = styled(BiShuffle)`
-  color: #0a0a0a;
-  cursor: pointer;
-  font-size: 1.2rem;
-`;
-
-export const VolumeControl = styled.div`
-  position: relative;
-  top: 11.5rem;
-  left: 14rem;
   width: 40px;
   height: 400px;
   cursor: pointer;
+  position: relative;
 
   :hover input {
     opacity: 1;
@@ -176,16 +206,17 @@ export const VolumeControl = styled.div`
   input {
     cursor: pointer;
     opacity: 0;
-    color: #0a0a0a;
+    color: white;
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 30.2rem;
-    right: -2.2rem;
+    bottom: 18.7rem;
+    right: -2.7rem;
   }
 `;
 
 export const VolumeButton = styled(BsFillVolumeDownFill)`
   cursor: pointer;
-  color: #0a0a0a;
+  color: white;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 `;

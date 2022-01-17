@@ -7,6 +7,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 1rem;
   color: #0a0a0a;
 `;
 
@@ -21,7 +22,7 @@ export const HistoriaBtn = styled.button`
   color: white;
   cursor: pointer;
   z-index: 9999;
-  margin: 2rem 2rem 6rem 2rem;
+  margin: 2rem 2rem 3rem 2rem;
   box-shadow: 1px 5px 15px -5px #000000;
   transition: all 0.5s ease;
   &:hover{

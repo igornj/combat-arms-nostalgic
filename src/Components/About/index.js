@@ -20,8 +20,8 @@ function About() {
       </p>
 
       <h2>
-        &quot;The time you enjoy wasting is never wasted time - Bertrand
-        RussellI&quot;.
+        &quot;The time you enjoy wasting is never wasted time&quot; - Bertrand
+        RussellI.
       </h2>
     </AboutContainer>
   );

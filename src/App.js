@@ -9,6 +9,7 @@ import Player from './Components/Player';
 import Carousel from './Components/Carousel';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
+import Music from './Components/Music';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Carousel />
       <Main />
+      <Music />
       <Footer />
       <Player />
     </Router>

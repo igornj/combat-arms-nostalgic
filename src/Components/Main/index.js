@@ -16,7 +16,11 @@ function Main() {
             Historia
           </HistoriaBtn>
           <Historia />
-          <HistoriaBtn type="button" onClick={() => setHistoria(!historia)}>
+          <HistoriaBtn
+            style={{ marginTop: '6rem' }}
+            type="button"
+            onClick={() => setHistoria(!historia)}
+          >
             Fechar historia
           </HistoriaBtn>
         </>
