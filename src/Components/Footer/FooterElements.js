@@ -5,10 +5,11 @@ export const FooContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 1.4rem;
   width: 100%;
   height: 150px;
   margin-bottom: 2.5rem;
-  background: #0a0a0a;
+  background: #000000;
   position: relative;
   bottom: 2.5rem;
 
@@ -23,7 +24,6 @@ export const FooContainer = styled.div`
 `;
 
 export const Socials = styled.div`
-  margin: 1rem 2rem;
   white-space: nowrap;
 
   h1 {
@@ -35,25 +35,44 @@ export const Socials = styled.div`
 `;
 
 export const Nicks = styled.div`
-  margin: 1rem 2rem;
   h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #c0c0c0;
+  }
+`;
+
+export const Goahead = styled.div`
+  img {
+    width: 60px;
+    filter: invert(95%) sepia(95%) saturate(22%) hue-rotate(61deg)
+      brightness(106%) contrast(104%);
   }
 `;
 
 export const Instagram = styled(FaInstagram)`
   font-size: 1.5rem;
-  color: #fff;
+  color: #bdbdbd;
+  :hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+  }
   margin-right: 1rem;
 `;
 export const Twitter = styled(FaTwitter)`
   font-size: 1.5rem;
-  color: #fff;
+  color: #bdbdbd;
+  :hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+  }
   margin-right: 1rem;
 `;
 export const Git = styled(FaGithub)`
   font-size: 1.5rem;
-  color: #fff;
+  color: #bdbdbd;
+  :hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+  }
   margin-right: 1rem;
 `;

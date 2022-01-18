@@ -3,6 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../Assets/logo.jpg';
+import timeline from '../../Assets/TIMELINE.svg';
+
+import Sidebar from '../Sidebar';
 
 import {
   HeaderContainer,
@@ -14,12 +17,17 @@ import {
   Twitter,
   Instagram,
   Github,
+  MenuOpenHam,
+  MenuClosedHam,
 } from './HeaderElements';
 
 function Header() {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <>
       <NavContainer>
+        <Sidebar isOpen={isOpen} />
         <NavElements>
           <Logo to="/">
             <img src={logo} alt="logo" />
@@ -30,11 +38,11 @@ function Header() {
             </Link>
 
             <Link to="/">
-              <h1>Videos</h1>
+              <h1>Músicas</h1>
             </Link>
 
             <Link to="/">
-              <h1>Músicas</h1>
+              <h1>Vídeos</h1>
             </Link>
 
             <Link to="/">
@@ -55,11 +63,16 @@ function Header() {
               <Github />
             </Link>
           </Socials>
+          {isOpen ? (
+            <MenuClosedHam onClick={() => setIsOpen(!isOpen)} />
+          ) : (
+            <MenuOpenHam onClick={() => setIsOpen(!isOpen)} />
+          )}
         </NavElements>
       </NavContainer>
       <HeaderContainer>
         <h1>COMBAT ARMS</h1>
-        <h2>TIMELINE</h2>
+        <img src={timeline} alt="timeline" />
       </HeaderContainer>
     </>
   );

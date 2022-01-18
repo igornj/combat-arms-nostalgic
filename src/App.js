@@ -10,6 +10,7 @@ import Carousel from './Components/Carousel';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
 import Music from './Components/Music';
+import Video from './Components/Videos';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Carousel />
       <Main />
       <Music />
+      <Video />
       <Footer />
       <Player />
     </Router>

@@ -7,7 +7,10 @@ import {
   Twitter,
   Git,
   Nicks,
+  Goahead,
 } from './FooterElements';
+
+import goAhead from '../../Assets/goAhead.svg';
 
 function Footer() {
   return (
@@ -38,6 +41,10 @@ function Footer() {
         <h1>Fosade</h1>
       </Nicks>
       <p>&copy; Todos os direitos reservados</p>
+
+      <Goahead>
+        <img src={goAhead} alt="goAhead" />
+      </Goahead>
     </FooContainer>
   );
 }

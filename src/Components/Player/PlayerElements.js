@@ -22,8 +22,8 @@ export const PlayerContainer = styled.div`
 
 export const ArtistLabel = styled.div`
   color: white;
-  font-size: 0.7rem;
-  width: 40%;
+  font-size: 0.6rem;
+  width: 30%;
   margin-left: 1rem;
   margin-bottom: 1rem;
 `;
@@ -65,14 +65,14 @@ export const Pause = styled(BsFillPauseCircleFill)`
 export const Prev = styled(BiSkipPrevious)`
   color: #b5b5b5;
   cursor: pointer;
-  :active {
+  :hover {
     color: white;
   }
 `;
 export const Next = styled(BiSkipNext)`
   color: #b5b5b5;
   cursor: pointer;
-  :active {
+  :hover {
     color: white;
   }
 `;
@@ -80,7 +80,7 @@ export const Shuffle = styled(BiShuffle)`
   color: #b5b5b5;
   cursor: pointer;
   font-size: 1.2rem;
-  :active {
+  :hover {
     color: white;
   }
 `;
@@ -90,9 +90,10 @@ export const AudioTimer = styled.div`
   justify-content: center;
   align-items: center;
   color: #b5b5b5;
+  margin-top: 7px;
 
   div {
-    font-size: 15px;
+    font-size: 13px;
     margin-right: 0.5rem;
   }
 
@@ -102,7 +103,7 @@ export const AudioTimer = styled.div`
 
   input[type='range'] {
     -webkit-appearance: none;
-    width: 600px;
+    width: 220px;
   }
   input[type='range']:focus {
     outline: none;
@@ -216,7 +217,10 @@ export const VolumeControl = styled.div`
 
 export const VolumeButton = styled(BsFillVolumeDownFill)`
   cursor: pointer;
-  color: white;
+  color: #b5b5b5;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
+  :hover {
+    color: white;
+  }
 `;

@@ -121,7 +121,7 @@ const tracks = [
   },
 
   {
-    title: `Don't You Worry Child - Swedish House Mafia (Alex G Friends Acoustic Cover)`,
+    title: `Don't You Worry Child - (Alex G Cover)`,
     src: songs[22].default,
   },
 
@@ -166,7 +166,7 @@ const tracks = [
   },
 
   {
-    title: 'Hoodie Allen ft. Two Door Cinema Club - Words Of Wisdom',
+    title: 'Hoodie Allen - Words Of Wisdom',
     src: songs[31].default,
   },
 

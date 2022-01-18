@@ -31,7 +31,7 @@ export const BlackContent = styled.div`
   h1 {
     font-weight: 200;
     text-align: left;
-    margin: 6rem 4rem 1rem 4rem;
+    margin: 8rem 4rem 1rem 4rem;
   }
 
   p {
@@ -88,6 +88,7 @@ export const ImgContainer = styled.div`
   figcaption {
     font-style: italic;
     color: #0a0a0a;
+    margin: 0 1rem;
   }
 `;
 

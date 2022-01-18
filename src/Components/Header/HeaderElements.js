@@ -6,7 +6,9 @@ import {
   AiOutlineTwitter,
   AiOutlineInstagram,
   AiOutlineGithub,
+  AiOutlineClose,
 } from 'react-icons/ai';
+import { BiMenu } from 'react-icons/bi';
 
 export const NavContainer = styled.div`
   width: 100%;
@@ -33,7 +35,7 @@ export const Logo = styled(Link)`
 `;
 
 export const NavMenu = styled.div`
-  display: flex;
+  display: none;
   column-gap: 1rem;
   justify-content: center;
   width: 100%;
@@ -59,17 +61,45 @@ export const Socials = styled.div`
 
 export const Twitter = styled(AiOutlineTwitter)`
   font-size: 1.5rem;
-  color: #f0f0f0;
+  color: #bdbdbd;
   margin-right: 0.5rem;
+  :hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+  }
 `;
 export const Instagram = styled(AiOutlineInstagram)`
   font-size: 1.5rem;
-  color: #f0f0f0;
+  color: #bdbdbd;
   margin-right: 0.5rem;
+  :hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+  }
 `;
 export const Github = styled(AiOutlineGithub)`
   font-size: 1.5rem;
-  color: #f0f0f0;
+  color: #bdbdbd;
+  :hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+  }
+`;
+
+export const MenuOpenHam = styled(BiMenu)`
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 9999;
+  margin-right: 1rem;
+`;
+
+export const MenuClosedHam = styled(AiOutlineClose)`
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 9999;
+  margin-right: 1rem;
 `;
 
 export const HeaderContainer = styled.div`
@@ -87,16 +117,14 @@ export const HeaderContainer = styled.div`
 
   h1 {
     color: #f0f0f0;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     line-height: 6rem;
+    white-space: nowrap;
   }
 
-  h2 {
-    font-weight: 400;
-    color: #f0f0f0;
-    font-size: 4rem;
-    letter-spacing: 3rem;
+  img {
+    margin-top: 1.2rem;
   }
 `;

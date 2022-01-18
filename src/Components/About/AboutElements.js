@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 3rem 2rem;
+  text-align: center;
 
   h1 {
     font-weight: 300;
@@ -18,18 +19,12 @@ export const AboutContainer = styled.div`
     font-weight: 300;
     line-height: 1.5rem;
     letter-spacing: 0.02em;
-    text-align: justify;
-  }
-
-  p:last-child {
-    text-align: center;
   }
 
   h2 {
     margin-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
-    font-style: italic;
     letter-spacing: 0.295em;
   }
 `;

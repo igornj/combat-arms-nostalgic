@@ -21,7 +21,7 @@ export const HistoriaBtn = styled.button`
   background: #0a0a0a;
   color: white;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 9998;
   margin: 2rem 2rem 3rem 2rem;
   box-shadow: 1px 5px 15px -5px #000000;
   transition: all 0.5s ease;
