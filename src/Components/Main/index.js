@@ -13,7 +13,7 @@ function Main() {
       {historia ? (
         <>
           <HistoriaBtn type="button" onClick={() => setHistoria(!historia)}>
-            Historia
+            Minha Historia
           </HistoriaBtn>
           <Historia />
           <HistoriaBtn
@@ -27,7 +27,7 @@ function Main() {
       ) : (
         <>
           <HistoriaBtn type="button" onClick={() => setHistoria(!historia)}>
-            Historia
+            Minha Historia
           </HistoriaBtn>
         </>
       )}

@@ -6,6 +6,12 @@ export const MusicContainer = styled.div`
   align-items: center;
   flex-direction: column;
   margin: 3rem 2rem 6rem 2rem;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 7rem 0rem 6rem 0rem;
+  }
 `;
 
 export const MusicContent = styled.div`
@@ -28,6 +34,10 @@ export const MusicContent = styled.div`
     letter-spacing: 0.02em;
     text-align: center;
   }
+
+  @media screen and (min-width: 1000px) {
+    width: 40%;
+  }
 `;
 
 export const Songs = styled.div`
@@ -43,5 +53,9 @@ export const Songs = styled.div`
     line-height: 1.5rem;
     letter-spacing: 0.02em;
     text-align: justify;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-left: 2rem;
   }
 `;

@@ -8,6 +8,7 @@ export const VideoContainer = styled.div`
   flex-direction: column;
   background-image: url(${vector});
   background-size: cover;
+  width: 100%;
 
   a {
     text-decoration: none;
@@ -18,6 +19,10 @@ export const VideoContainer = styled.div`
     :hover {
       color: #696969;
     }
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
   }
 `;
 
@@ -43,6 +48,13 @@ export const VideoText = styled.div`
     letter-spacing: 0.02em;
     color: #f0f0f0;
   }
+
+  @media screen and (min-width: 1000px) {
+    margin: 4rem 4rem 4rem 2rem;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+  }
 `;
 
 export const VideoContent = styled.div`
@@ -54,4 +66,8 @@ export const VideoContent = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
   margin: 3rem 0rem 6rem 0rem;
+
+  @media screen and (min-width: 1000px) {
+    margin: 6rem 0rem 6rem 5rem;
+  }
 `;

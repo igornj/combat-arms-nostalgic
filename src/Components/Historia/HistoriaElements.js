@@ -7,14 +7,13 @@ export const HistoriaContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: #0a0a0a;
-
 `;
 
 export const HistoriaContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 `;
 
 export const BlackContent = styled.div`
@@ -26,7 +25,6 @@ export const BlackContent = styled.div`
   background-size: cover;
   color: #f0f0f0;
   margin-top: 0rem;
-
 
   h1 {
     font-weight: 200;
@@ -41,13 +39,29 @@ export const BlackContent = styled.div`
     line-height: 1.5rem;
   }
 
+  @media screen and (min-width: 1000px){
+    flex-direction: row;
+    margin-top: 2rem;
+    h1 {
+      font-weight: 200;
+      text-align: left;
+      margin: 8rem 0rem 1rem 4rem;
+    }
+
+    p {
+      font-weight: 100;
+      text-align: justify;
+      margin: 0 4rem 4rem 4rem;
+      line-height: 1.5rem;
+    }
+  }
+
 `;
 
 export const WhiteContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 1rem;
   width: 100%;
   color: #0a0a0a;
   margin-top: 2rem;
@@ -57,7 +71,7 @@ export const WhiteContent = styled.div`
   h1 {
     font-weight: 200;
     text-align: left;
-    margin: 6rem 4rem 0rem 4rem;
+    margin: 6rem 4rem 1rem 4rem;
 
   }
 
@@ -69,7 +83,20 @@ export const WhiteContent = styled.div`
     font-weight: 300;
   }
 
+
+  @media screen and (min-width: 1000px){
+    flex-direction: row;
+  }
+
 `;
+
+export const TextContainer = styled.div`
+  width: 100%;
+  @media screen and (min-height: 1000px){
+    width: 50%;
+  }
+`;
+
 
 export const ImgContainer = styled.div`
   display: flex;
@@ -89,6 +116,14 @@ export const ImgContainer = styled.div`
     font-style: italic;
     color: #0a0a0a;
     margin: 0 1rem;
+  }
+
+  @media screen and (min-width: 1000px){
+    top: 1.4rem;
+
+    figcaption {
+      color: #f0f0f0;
+    }
   }
 `;
 

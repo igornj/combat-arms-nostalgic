@@ -39,7 +39,7 @@ export const NavMenu = styled.div`
   column-gap: 1rem;
   justify-content: center;
   width: 100%;
-  padding: 1rem;
+  margin-left: 1.5rem;
 
   a {
     text-decoration: none;
@@ -47,8 +47,16 @@ export const NavMenu = styled.div`
 
   h1 {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 100;
     color: #f0f0f0;
+    transition: all 0.2s ease;
+    :hover {
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: flex;
   }
 `;
 
@@ -63,8 +71,8 @@ export const Twitter = styled(AiOutlineTwitter)`
   font-size: 1.5rem;
   color: #bdbdbd;
   margin-right: 0.5rem;
+  transition: all 0.2s ease;
   :hover {
-    transform: scale(1.2);
     color: #f0f0f0;
   }
 `;
@@ -72,16 +80,16 @@ export const Instagram = styled(AiOutlineInstagram)`
   font-size: 1.5rem;
   color: #bdbdbd;
   margin-right: 0.5rem;
+  transition: all 0.2s ease;
   :hover {
-    transform: scale(1.2);
     color: #f0f0f0;
   }
 `;
 export const Github = styled(AiOutlineGithub)`
   font-size: 1.5rem;
   color: #bdbdbd;
+  transition: all 0.2s ease;
   :hover {
-    transform: scale(1.2);
     color: #f0f0f0;
   }
 `;
@@ -92,6 +100,10 @@ export const MenuOpenHam = styled(BiMenu)`
   cursor: pointer;
   z-index: 9999;
   margin-right: 1rem;
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const MenuClosedHam = styled(AiOutlineClose)`
@@ -117,14 +129,22 @@ export const HeaderContainer = styled.div`
 
   h1 {
     color: #f0f0f0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
-    line-height: 6rem;
     white-space: nowrap;
   }
 
   img {
-    margin-top: 1.2rem;
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 100vh;
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 0.5rem;
+    }
   }
 `;

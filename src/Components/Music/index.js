@@ -13,7 +13,7 @@ function Music() {
           época no player do site.
           <br />
           <br />
-          Algumas delas parecem que até vieram do jogo mesmo:
+          Algumas delas parecem que até vieram do jogo mesmo.
         </p>
       </MusicContent>
 

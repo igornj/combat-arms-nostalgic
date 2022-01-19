@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import {
   CarouselContainer,
   CarouselImgs,
+  Controls,
   RightArrow,
   LeftArrow,
 } from './CarouselElements';
@@ -39,12 +40,14 @@ function Carousel() {
       <Loading isLoading={isLoading} />
       <CarouselContainer>
         <CarouselImgs>
-          <LeftArrow onClick={prevImg} />
           <div>
             <img src={images[imgIndex].default} alt="combat-arms-img" />
           </div>
-          <RightArrow onClick={nextImg} />
         </CarouselImgs>
+        <Controls>
+          <LeftArrow onClick={prevImg} />
+          <RightArrow onClick={nextImg} />
+        </Controls>
       </CarouselContainer>
     </>
   );

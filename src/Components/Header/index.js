@@ -51,17 +51,17 @@ function Header() {
           </NavMenu>
 
           <Socials>
-            <Link to="https://twitter.com/fosade_">
+            <a href="https://twitter.com/fosade_">
               <Twitter />
-            </Link>
+            </a>
 
-            <Link to="https://www.instagram.com/igor_nj/">
+            <a href="https://www.instagram.com/igor_nj/">
               <Instagram />
-            </Link>
+            </a>
 
-            <Link to="https://github.com/igornj">
+            <a href="https://github.com/igornj">
               <Github />
-            </Link>
+            </a>
           </Socials>
           {isOpen ? (
             <MenuClosedHam onClick={() => setIsOpen(!isOpen)} />
@@ -72,6 +72,7 @@ function Header() {
       </NavContainer>
       <HeaderContainer>
         <h1>COMBAT ARMS</h1>
+        <p>TIMELINE</p>
         <img src={timeline} alt="timeline" />
       </HeaderContainer>
     </>

@@ -52,8 +52,8 @@ export const Goahead = styled.div`
 export const Instagram = styled(FaInstagram)`
   font-size: 1.5rem;
   color: #bdbdbd;
+  transition: all 0.2s ease;
   :hover {
-    transform: scale(1.2);
     color: #f0f0f0;
   }
   margin-right: 1rem;
@@ -61,8 +61,8 @@ export const Instagram = styled(FaInstagram)`
 export const Twitter = styled(FaTwitter)`
   font-size: 1.5rem;
   color: #bdbdbd;
+  transition: all 0.2s ease;
   :hover {
-    transform: scale(1.2);
     color: #f0f0f0;
   }
   margin-right: 1rem;
@@ -70,8 +70,8 @@ export const Twitter = styled(FaTwitter)`
 export const Git = styled(FaGithub)`
   font-size: 1.5rem;
   color: #bdbdbd;
+  transition: all 0.2s ease;
   :hover {
-    transform: scale(1.2);
     color: #f0f0f0;
   }
   margin-right: 1rem;
