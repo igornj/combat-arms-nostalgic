@@ -5,6 +5,7 @@
 /aws keys
 /.pnp
 .pnp.js
+.env
 
 # testing
 /coverage

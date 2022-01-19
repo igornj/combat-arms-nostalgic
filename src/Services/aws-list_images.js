@@ -14,11 +14,6 @@ const s3 = new AWS.S3({
   Bucket: BUCKET_NAME,
 });
 
-// const params = {
-//   Bucket: 'combatarms-lifetime-images',
-//   Prefix: 'combatarms-lifetime-images/',
-// };
-
 exports.handler = async (event) => {
   const allKeys = await getAllKeys({ Bucket: BUCKET_NAME });
   return allKeys;
