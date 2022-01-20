@@ -26,7 +26,6 @@ function Player() {
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [songIndex, setSongIndex] = useState(0);
-  console.log(isShuffled);
 
   const audioPlayer = useRef();
   const progressBar = useRef();

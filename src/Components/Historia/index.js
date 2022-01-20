@@ -20,6 +20,7 @@ import catImg05 from '../../Assets/06.jpg';
 import catImg06 from '../../Assets/07.jpg';
 import catImg07 from '../../Assets/08.jpg';
 import catImg08 from '../../Assets/09.jpg';
+import catImg09 from '../../Assets/10.jpg';
 
 function Historia() {
   const [toggleImg, setToggleImg] = React.useState(false);
@@ -162,7 +163,7 @@ function Historia() {
         <WhiteContent>
           <ImgContainer>
             <img
-              src={alanImg}
+              src={catImg09}
               alt="Alan na esquerda e eu na direita."
               onClick={toggle}
             />
@@ -173,7 +174,7 @@ function Historia() {
                 color: 'black',
               }}
             >
-              Meu amigo Alan na esquerda e eu na direita.
+              (Imagem da internet) Salas com as regras LB7
             </figcaption>
           </ImgContainer>
 
@@ -628,7 +629,7 @@ function Historia() {
                 color: 'black',
               }}
             >
-              Primeiro encontro dos membros do clan UpperClutch no ano de 2012
+              Membros do clan UpperClutch em 2013
             </figcaption>
           </ImgContainer>
 

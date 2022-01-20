@@ -15,7 +15,7 @@ export const SidebarContainer = styled.aside`
   z-index: 9999;
   transition: top 0.3s ease-in-out;
 
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     display: none;
   }
 `;
