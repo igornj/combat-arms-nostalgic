@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import {
-  HistoriaContainer,
-  HistoriaContent,
+  HistoryContainer,
+  HistoryContent,
   BlackContent,
   WhiteContent,
   TextContainer,
   ImgContainer,
-} from './HistoriaElements';
+} from './HistoryElements';
 
 //images
 import alanImg from '../../Assets/00.png';
@@ -22,7 +22,7 @@ import catImg07 from '../../Assets/08.jpg';
 import catImg08 from '../../Assets/09.jpg';
 import catImg09 from '../../Assets/10.jpg';
 
-function Historia() {
+function History() {
   const [toggleImg, setToggleImg] = React.useState(false);
 
   const toggle = () => {
@@ -32,8 +32,8 @@ function Historia() {
   //console.log(toggleImg);
 
   return (
-    <HistoriaContainer id="historia">
-      <HistoriaContent>
+    <HistoryContainer>
+      <HistoryContent>
         <BlackContent>
           <TextContainer>
             <h1>Inicio da rodada</h1>
@@ -708,9 +708,9 @@ function Historia() {
             </figcaption>
           </ImgContainer>
         </BlackContent>
-      </HistoriaContent>
-    </HistoriaContainer>
+      </HistoryContent>
+    </HistoryContainer>
   );
 }
 
-export default Historia;
+export default History;

@@ -4,7 +4,7 @@ import { MusicContainer, MusicContent, Songs } from './MusicElements';
 
 function Music() {
   return (
-    <MusicContainer>
+    <MusicContainer id="musica">
       <MusicContent>
         <h1>Músicas</h1>
         <p>

@@ -11,20 +11,23 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 import Music from './Components/Music';
 import Video from './Components/Videos';
+import { AuthProvider } from './Context/AuthContext';
 
 function App() {
   return (
-    <Router>
-      <GlobalStyled />
-      <Header />
-      <About />
-      <Carousel />
-      <Main />
-      <Music />
-      <Video />
-      <Footer />
-      <Player />
-    </Router>
+    <AuthProvider>
+      <Router>
+        <GlobalStyled />
+        <Header />
+        <About />
+        <Carousel />
+        <Main />
+        <Music />
+        <Video />
+        <Footer />
+        <Player />
+      </Router>
+    </AuthProvider>
   );
 }
 

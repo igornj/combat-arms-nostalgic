@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
 `;
 
 
-export const HistoriaBtn = styled.button`
+export const HistoryBtn = styled.button`
   border: none;
   border-radius: 10px;
   padding: 1rem 4rem;

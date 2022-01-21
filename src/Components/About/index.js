@@ -3,7 +3,7 @@ import { AboutContainer } from './AboutElements';
 
 function About() {
   return (
-    <AboutContainer>
+    <AboutContainer id="sobre">
       <h1>Sobre mim</h1>
       <p>
         O Combat arms foi um jogo que marcou muito minha vida, seja pelos

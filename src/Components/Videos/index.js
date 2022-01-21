@@ -4,7 +4,7 @@ import { VideoContainer, VideoContent, VideoText } from './VideosElements';
 
 function Video() {
   return (
-    <VideoContainer>
+    <VideoContainer id="video">
       <VideoContent>
         <iframe
           width="560"

@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
 import styled from 'styled-components';
 import Headerbg from '../../Assets/lucask4uz3.png';
 
 import { Link } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import { HashLink as LinkH } from 'react-router-hash-link';
 import {
   AiOutlineTwitter,
   AiOutlineInstagram,
@@ -12,11 +15,13 @@ import { BiMenu } from 'react-icons/bi';
 
 export const NavContainer = styled.div`
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
+  background: ${({ changeColor }) => (changeColor ? '#383838' : 'transparent')};
 `;
 
 export const NavElements = styled.div`
@@ -41,22 +46,19 @@ export const NavMenu = styled.div`
   width: 100%;
   margin-left: 1.5rem;
 
-  a {
-    text-decoration: none;
-  }
-
-  h1 {
-    font-size: 1rem;
-    font-weight: 100;
-    color: #f0f0f0;
-    transition: all 0.2s ease;
-    :hover {
-      font-weight: 300;
-    }
-  }
-
   @media screen and (min-width: 1000px) {
     display: flex;
+  }
+`;
+
+export const NavScroll = styled(LinkS)`
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #f0f0f0;
+  transition: all 0.2s ease;
+  :hover {
+    font-weight: 300;
   }
 `;
 

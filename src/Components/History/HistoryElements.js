@@ -2,14 +2,14 @@
 import styled from 'styled-components';
 import vector from '../../Assets/teste.svg';
 
-export const HistoriaContainer = styled.div`
+export const HistoryContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   color: #0a0a0a;
 `;
 
-export const HistoriaContent = styled.div`
+export const HistoryContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

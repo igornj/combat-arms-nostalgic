@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useAuth } from '../../Context/AuthContext';
 
 import logo from '../../Assets/logo.jpg';
 import timeline from '../../Assets/TIMELINE.svg';
@@ -12,6 +11,7 @@ import {
   NavContainer,
   NavElements,
   NavMenu,
+  NavScroll,
   Socials,
   Logo,
   Twitter,
@@ -23,31 +23,60 @@ import {
 
 function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [changeColor, setChangeColor] = React.useState(false);
+  const { isHistoryOpen, setisHistoryOpen } = useAuth();
+
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const onScroll = () => {
+    if (window.scrollY >= 200) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  };
+
+  const openHistorySection = () => {
+    setisHistoryOpen(!isHistoryOpen);
+  };
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
-      <NavContainer>
-        <Sidebar isOpen={isOpen} />
+      <NavContainer changeColor={changeColor}>
+        <Sidebar toggle={toggle} isOpen={isOpen} />
         <NavElements>
           <Logo to="/">
             <img src={logo} alt="logo" />
           </Logo>
           <NavMenu>
-            <Link to="#historia">
-              <h1>Historia</h1>
-            </Link>
+            <NavScroll
+              smooth
+              duration={1000}
+              offset={0}
+              to="historia"
+              onClick={openHistorySection}
+            >
+              Historia
+            </NavScroll>
 
-            <Link to="/">
-              <h1>Músicas</h1>
-            </Link>
+            <NavScroll smooth duration={1000} offset={-100} to="musica">
+              Músicas
+            </NavScroll>
 
-            <Link to="/">
-              <h1>Vídeos</h1>
-            </Link>
+            <NavScroll smooth duration={1000} to="video">
+              Vídeos
+            </NavScroll>
 
-            <Link to="/">
-              <h1>Sobre</h1>
-            </Link>
+            <NavScroll smooth duration={1000} offset={-100} to="sobre">
+              Sobre
+            </NavScroll>
           </NavMenu>
 
           <Socials>

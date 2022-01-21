@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-// import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
-import { Link } from 'react-router-dom';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -28,7 +26,7 @@ export const SidebarMenu = styled.div`
   margin-top: 4rem;
 `;
 
-export const SidebarLink = styled(Link)`
+export const SidebarLink = styled(LinkS)`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -42,21 +40,5 @@ export const SidebarLink = styled(Link)`
   &:hover {
     transition: border 0.2s ease-in-out;
     border-bottom: 5px solid #fff;
-  }
-`;
-
-export const SidebarScroll = styled(LinkS)`
-  cursor: pointer;
-  text-align: center;
-  padding: 2rem;
-  color: white;
-  width: 100%;
-  height: 100%;
-  white-space: nowrap;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #0a0a0a;
   }
 `;

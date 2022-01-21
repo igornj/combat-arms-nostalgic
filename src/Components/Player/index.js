@@ -38,26 +38,58 @@ function Player() {
   //   progressBar.current.max = seconds;
   // }, [songIndex, audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
-  //When the audio ends, play the next one automatically
+  //When the component mount, the volume is set
   useEffect(() => {
     audioPlayer.current.volume = 2 / 100
+  }, []);
+
+  //When the audio ends, play the next one automatically
+  useEffect(() => {
     audioPlayer?.current?.addEventListener('ended', () => {
-      setSongIndex(songIndex + 1)
-      const playPromise = audioPlayer.current.play();
+      if (isShuffled === false) {
+        setSongIndex(songIndex + 1)
+        const playPromise = audioPlayer.current.play();
 
-      if (playPromise !== undefined) {
-        playPromise.then(_ => {
+        if (playPromise !== undefined) {
+          playPromise.then(_ => {
 
-        })
-          .catch(error => {
-            console.log(error)
           })
+            .catch(error => {
+              console.log(error)
+            })
+        }
       }
+
     });
     // return () => {
     //   audioPlayer?.current?.removeEventListener('ended', console.log('removed event listener'));
     // };
   }, [songIndex, audioPlayer?.current?.readyState]);
+
+
+  //When the audio ends and is Shuffled, play the next one random
+  useEffect(() => {
+    audioPlayer?.current?.addEventListener('ended', () => {
+      if (isShuffled) {
+        setSongIndex(shuffledIndex());
+        const playPromise = audioPlayer.current.play();
+
+        if (playPromise !== undefined) {
+          playPromise.then(_ => {
+
+          })
+            .catch(error => {
+              console.log(error)
+            })
+        }
+      }
+
+    });
+    // return () => {
+    //   audioPlayer?.current?.removeEventListener('ended', console.log('removed event listener'));
+    // };
+  }, [songIndex, audioPlayer?.current?.readyState]);
+
 
 
 
@@ -102,24 +134,27 @@ function Player() {
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
     }
-
   }
 
   const nextSong = async () => {
-    if (songIndex >= 0 && songIndex < tracks.length) {
+    if (songIndex >= 0 && songIndex < tracks.length && isShuffled === false) {
       setSongIndex(songIndex + 1);
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
-    } else {
-      setSongIndex(0)
+    } else if (songIndex >= 0 && songIndex < tracks.length && isShuffled) {
+      setSongIndex(shuffledIndex());
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
+      setisPlaying(true)
     }
+
   };
 
 
-  const shuffledSong = () => {
-    setisShuffled(!isShuffled)
+  const shuffledIndex = (min = 1, max = tracks.length) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
   }
 
 
@@ -143,11 +178,6 @@ function Player() {
     return `${returnedMinutes}:${returnedSeconds}`;
   };
 
-  const shuffledIndex = (min = 1, max = tracks.length) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
 
 
   return (
@@ -159,7 +189,7 @@ function Player() {
 
       <Info>
         <Controls>
-          <Shuffle onClick={shuffledSong} />
+          <Shuffle isShuffled={isShuffled} onClick={() => setisShuffled(!isShuffled)} />
           <Prev onClick={prevSong} />
           {isPlaying ? (
             <Pause onClick={handleAudio} />
