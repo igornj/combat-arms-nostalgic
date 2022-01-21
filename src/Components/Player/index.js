@@ -46,8 +46,20 @@ function Player() {
   //When the audio ends, play the next one automatically
   useEffect(() => {
     audioPlayer?.current?.addEventListener('ended', () => {
-      if (isShuffled === false) {
+      if (isShuffled === false && songIndex <= tracks.length) {
         setSongIndex(songIndex + 1)
+        const playPromise = audioPlayer.current.play();
+
+        if (playPromise !== undefined) {
+          playPromise.then(_ => {
+
+          })
+            .catch(error => {
+              console.log(error)
+            })
+        }
+      } else {
+        setSongIndex(0)
         const playPromise = audioPlayer.current.play();
 
         if (playPromise !== undefined) {

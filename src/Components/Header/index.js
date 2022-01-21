@@ -80,15 +80,27 @@ function Header() {
           </NavMenu>
 
           <Socials>
-            <a href="https://twitter.com/fosade_">
+            <a
+              target="_blank"
+              href="https://twitter.com/fosade_"
+              rel="noreferrer"
+            >
               <Twitter />
             </a>
 
-            <a href="https://www.instagram.com/igor_nj/">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/igor_nj/"
+              rel="noreferrer"
+            >
               <Instagram />
             </a>
 
-            <a href="https://github.com/igornj">
+            <a
+              target="_blank"
+              href="https://github.com/igornj"
+              rel="noreferrer"
+            >
               <Github />
             </a>
           </Socials>

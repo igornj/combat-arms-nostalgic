@@ -25,7 +25,7 @@ function Footer() {
           <Instagram />
         </a>
 
-        <a href="https://twitter.com/fosade_" target="_blank" rel="noreferrer">
+        <a target="_blank" href="https://twitter.com/fosade_" rel="noreferrer">
           <Twitter />
         </a>
 
