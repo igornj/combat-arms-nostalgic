@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { MusicContainer, MusicContent, Songs } from './MusicElements';
+import tracks from '../Player/songsDescription';
 
 function Music() {
   return (
@@ -9,7 +10,7 @@ function Music() {
         <h1>Músicas</h1>
         <p>
           Muitas músicas fizeram parte da historia enquanto eu jogava. Decidi
-          então colocar uma playlist com maioria das músicas que me marcaram na
+          então cria uma playlist com maioria das músicas que me marcaram na
           época no player do site.
           <br />
           <br />
@@ -18,10 +19,9 @@ function Music() {
       </MusicContent>
 
       <Songs>
-        <p>KDREW - Firestarter</p>
-        <p>Limp Bizkit - Behind Blue Eyes (Eyes Remix)</p>
-        <p>3OH!3 - Touchin on my</p>
-        <p>Jason Derulo - Whatcha Say</p>
+        {tracks.map((track) => {
+          return <p key={track.src}>{track.title}</p>;
+        })}
       </Songs>
     </MusicContainer>
   );

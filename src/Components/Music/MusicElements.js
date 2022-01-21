@@ -46,6 +46,8 @@ export const Songs = styled.div`
   align-items: center;
   flex-direction: column;
   row-gap: 1rem;
+  height: 100px;
+  overflow-y: auto;
 
   p {
     font-size: 1rem;

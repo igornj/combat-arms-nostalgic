@@ -189,7 +189,7 @@ function Player() {
 
       <Info>
         <Controls>
-          <Shuffle isShuffled={isShuffled} onClick={() => setisShuffled(!isShuffled)} />
+          <Shuffle isshuffled={isShuffled} onClick={() => setisShuffled(!isShuffled)} />
           <Prev onClick={prevSong} />
           {isPlaying ? (
             <Pause onClick={handleAudio} />
