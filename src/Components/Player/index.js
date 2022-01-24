@@ -38,7 +38,7 @@ function Player() {
   //   progressBar.current.max = seconds;
   // }, [songIndex, audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
-  //When the component mount, the volume is set
+  //When the component mount, the volume is set low
   useEffect(() => {
     audioPlayer.current.volume = 2 / 100
   }, []);
@@ -163,7 +163,7 @@ function Player() {
   };
 
 
-  const shuffledIndex = (min = 1, max = tracks.length) => {
+  const shuffledIndex = (min = 0, max = tracks.length) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;

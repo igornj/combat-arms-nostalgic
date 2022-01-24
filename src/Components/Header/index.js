@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useAuth } from '../../Context/AuthContext';
+import { animateScroll as scroll } from 'react-scroll';
 
 import logo from '../../Assets/logo.jpg';
 import timeline from '../../Assets/TIMELINE.svg';
@@ -47,12 +48,16 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <NavContainer changeColor={changeColor}>
         <Sidebar toggle={toggle} isOpen={isOpen} />
         <NavElements>
-          <Logo to="/">
+          <Logo onClick={scrollToTop}>
             <img src={logo} alt="logo" />
           </Logo>
           <NavMenu>

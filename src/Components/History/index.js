@@ -117,17 +117,17 @@ function History() {
           <TextContainer>
             <h1>Um novo viciadinho</h1>
             <p>
-              Conforme eu ia entrando cada vez mais de cabeça dentro do jogo,
-              qualquer oportunidade que surgia pra falar sobre o "CA" eu incluia
-              ele na conversa, Inclusive virou quase que um padrão eu falar com
-              o Alan sobre quando a gente se encontrava na rua.
+              Conforme o tempo passava eu estava ainda mais viciado, em qualquer
+              oportunidade que surgia durante uma conversa eu falava sobre o
+              Combat Arms, Inclusive virou quase que um padrão eu falar com o
+              Alan sobre o jogo quando a gente se encontrava na rua.
               <br />
               <br />
               Até esse momento, eu ainda jogava mais sozinho ou com pessoas que
               eu adicionava dentro do jogo mesmo.
               <br />
               <br />
-              Isso mudaria quando ainda em 2011, um outro amigo de infância
+              Mas isso mudou quando ainda em 2011, um outro amigo de infância
               chamado <b>Guilherme "gzk" Anacleto</b> comentasse que também
               estava jogando o Combat Arms em uma conversa aleátoria comigo e
               com o Alan.
@@ -136,15 +136,18 @@ function History() {
               Ali eu tinha descoberto um{' '}
               <b>maluco mais viciado que eu no jogo.</b>
               <br />
-              <br />A gente jogava bola ou brincava na ruas as vezes, mas eu não
-              tinha tanto contato com ele ainda como ja tinha com o Alan.
-              Logicamente depois que a gente começou a <b>comer o jogo junto</b>
-              , não tinha um dia que não nos encontravamos pra jogar ou pra
-              ficar enfiado na casa do outro jogando.
+              <br />A gente já jogava bola juntos ou brincava na rua as vezes,
+              mas eu não tinha tanto contato com ele ainda como ja tinha com o
+              Alan, mas conforme a gente começou a <b>
+                comer o jogo junto
+              </b>{' '}
+              ficamos bem mais próximos, não tinha um dia que não nos
+              encontravamos pra jogar ou pra ficar enfiado na casa do outro
+              jogando.
               <br />
-              <br />O jogo fez esses 3 nerdolas ficarem mais juntos do que
-              nunca, compartilhando os acontecimentos da vida e descobrindo
-              outros jogos novos também conforme o tempo passava.
+              <br />E assim o Combat Arms fez esses 3 nerdolas ficarem mais
+              juntos do que nunca, compartilhando os acontecimentos da vida e
+              descobrindo outros jogos novos também conforme o tempo passava.
             </p>
           </TextContainer>
 
@@ -182,42 +185,37 @@ function History() {
             <h1>Buldogue 2 e Charlie 3</h1>
             <p>
               Não demorou muito pra tanto eu quanto o Guilherme começarmos a
-              ficar bom no jogo. Obviamente um jogador considerado bom pra mim
-              pode ser diferente de bom pra você mas{' '}
-              <b>A BALA COMIA, A GENTE ERA MUITO FORTE NÃO TINHA COMO.</b>
-              <br />
-              <br />
-              Enfim..
+              ficar bom no jogo.
               <br />
               <br />
               Os lobbys comuns de <b>Mata Mata</b>, <b>Capturar bandeira</b> ou
               até o <b>Quarentena</b> que era com certeza o modo mais divertido
-              pra mim de longe, começaram a perder a graça e não ter um desafio
-              muito grande. Assim, na busca de novos desafios fora dos
-              servidores casuais, encontramos duas ligas que organizavam
-              campeonatos e utlizavam de regras pra deixar o jogo mais voltado{' '}
+              pra mim, começaram a perder a graça e não ter um desafio muito
+              grande. Assim, na busca de novos desafios fora dos servidores
+              casuais, encontramos duas ligas que organizavam campeonatos e
+              utlizavam de regras pra deixar o jogo mais voltado{' '}
               <b>para as competições.</b>
               <br />
               <br />
-              Essas ligas eram a <b>WGB</b> e <b>LB7</b>, apesar dos nomes
+              Essas ligas eram a <b>WGB</b> e a <b>LB7</b>, apesar dos nomes
               diferentes elas tinham o mesmo propósito:{' '}
-              <b>Tentar balanciar o confronto entre times,</b> criando regras
+              <b>Tentar balanciar o confronto entre times</b>, criando regras
               onde somente algumas armas eram permitidas, deixando o jogo bem
               mais competitivo e menos irritante eu diria, porque o Combat Arms
               era bem conhecido pelo seu{' '}
               <b>arsenal exótico de armas e itens super roubados.</b>
               <br />
               <br />O mais legal dessas ligas era suas salas <b>"privadas" </b>
-              onde se podia jogar nessas regras, ou seja a gente não precisava
+              onde se podia jogar nessas regras ou seja, a gente não precisava
               realmente entrar nos campeonatos pra jogar nesse modelo deles.
               Basicamente, eles separavam um servidor especifico{' '}
               <b>"Charlie 3" </b>
-              onde as pessoas poderiam criar salas e jogar nesse modelo. Todo o
-              santo dia era disponibilizado uma senha no server do{' '}
+              onde as pessoas poderiam criar suas salas e jogar nesse modelo.
+              Todo o santo dia era disponibilizado uma senha no server do{' '}
               <b>TeamSpeak</b> deles, bastava entrar la pegar a senha do dia,
               entrar ou criar sua sala no servidor nas regras e no modo{' '}
-              <b>"Buscar e Destruir"</b> ou o famoso modo de{' '}
-              <b>"CT e Terrorista" </b> e dale.
+              <b>"Buscar e Destruir"</b> ou o famoso modo de <b>"CT e TR" </b> e
+              dale.
               <br />
               <br />
               Outra ideia genial dessas ligas foi pegar um outro servidor
@@ -227,26 +225,9 @@ function History() {
               <b>
                 formato exato utilizado pelas ligas que faziam os campeonatos
               </b>
-              , ou seja otimo para treinar. Além disso tinha <b>mix</b> e outros
-              campeonatos sasionais, era bem bacana, principalmente por ser a
-              primeira vez que eu tava tendo uma visão do competitivo de um
-              jogo.
-              <br />
-              <br />
-              Não preciso nem dizer que a gente <b>VIVIA</b> nesses servidores,
-              a gente parou completamente de jogar qualquer um dos outros modos
-              do jogo que não fosse esse. Alias não só a gente como os outros
-              servidores diminuiram consideravelmente a quantidade de players
-              casuais,{' '}
-              <b>
-                todo mundo queria descobrir porque tinham tantas salas com
-                senhas e lotadas.
-              </b>{' '}
-              <br />
-              <br />A e não posso esquecer que a gente metia uma mala, entrando
-              nas salas dentro do <b>TeamSpeak das ligas ficando mutado</b>.
-              Isso aqui era só pra mostrar que tu tava la jogando e era ativo na
-              comunidade, kkk doideira.
+              . Além disso tinha <b>mix(Times mistos)</b> e outros campeonatos
+              sasionais. Era bem bacana e principalmente por ser a primeira vez
+              que eu tava tendo uma visão do competitivo de um jogo.
             </p>
           </TextContainer>
         </WhiteContent>
@@ -255,32 +236,46 @@ function History() {
           <TextContainer>
             <h1>A dupla musical</h1>
             <p>
-              Nessa mesma época, o Guilherme teve a ideia meio doidera mas
-              também genial de <b>mudar nossos nicks.</b> O engraçado é que o
-              maldito nem me avisou, um dia eu loguei na minha conta todo
-              inocente e já estava trocado porque ele tinha acesso.
+              Não preciso nem dizer que a gente <b>VIVIA</b> nesses servidores
+              competitivos, a gente parou completamente de jogar qualquer um dos
+              outros modos do jogo que não fosse esse. Alias não só a gente como
+              os outros servidores diminuiram consideravelmente a quantidade de
+              players casuais,{' '}
+              <b>
+                todo mundo queria descobrir porque tinham tantas salas com
+                senhas e lotadas.
+              </b>{' '}
               <br />
               <br />
-              Os nicks novos eram <b>"-BlacK___S2"</b> e <b>"-FunK___S2"</b>,
-              toda vez que eu lembro disso eu começo a rir igual um besta não
-              tem como. Basicamente a ideia dele foi colocar dois estilos
-              músicais que a gente escutava na época nos nomes. Na época eu
-              fiquei <b>PUTO</b> porque não tinha curtido tanto, mas conforme os
-              dias iam passando eu começava a gostar mais do nick,
-              principalmente porque nos lobbys da <b>WGB</b> e <b>LB7 </b>a
-              gente sempre jogava junto e destruia, acabou criando uma fama
-              nessa duplinha.
+              Nessa mesma época, o Guilherme teve a ideia meio maluca mas também
+              genial de <b>mudar nossos nicks.</b> O engraçado é que o maldito
+              nem me avisou, um certo dia eu loguei na minha conta todo inocente
+              e já estava trocado meu nick, porque ele tinha acesso a minha
+              conta.
               <br />
               <br />
-              Até hoje eu sou conhecido como <b>"Black"</b> por todos os amigos
-              que fiz dentro do jogo que tenho contato até hoje, porque mudei de
-              nick depois disso só uma vez, que foi pra <b>"bllk-"</b> que é
-              Black só que encurtado e mantive isso em todos os outros jogos que
-              joguei, inclusive quando migramos para outros jogos. O engraçado é
-              que o Guilherme trocou de nick diversas vezes, como eu mantive o
-              meu as pessoas achavam que meu nick era uma referencia a cor{' '}
-              <b>"Preta"</b> quando na verdade era um estilo músical pra fazer
-              duplinha com o <b>Funk do "-FunK___S2".</b>
+              Os nicks novos eram <b>"-BlacK___S2"</b> e <b>"-FunK___S2"</b>.
+              <br />
+              <br />
+              Basicamente a ideia dele foi colocar dois estilos músicais que a
+              gente escutava na época nos nomes. Eu lembro que fiquei bem{' '}
+              <b>PUTO</b> quando ele trocou porque eu não tinha curtido nem
+              pouco, mas conforme os dias iam passando eu começava a me
+              acostumar mais com o nick, principalmente porque nos lobbys da WGB
+              e LB7 a gente sempre jogava junto e destruia,{' '}
+              <b>acabou criando uma fama nessa dupla.</b>
+              <br />
+              <br />
+              Até hoje eu sou conhecido como <b>Black</b> por todos os amigos
+              que fiz dentro do jogo que tenho contato até hoje, principalmente
+              porque eu mudei de nick depois disso só uma vez, que foi pra{' '}
+              <b>"bllk-"</b> que é <b>Black</b> só que encurtado, eu mantive
+              esse nick em todos os outros jogos que joguei.
+              <br />
+              <br />O engraçado é que o Guilherme trocou de nick diversas vezes,
+              como eu mantive o meu as pessoas achavam que meu nick era uma
+              referência a cor <b>Preta</b> quando na verdade era um estilo
+              músical pra fazer dupla com o <b>Funk do "-FunK___S2".</b>
             </p>
           </TextContainer>
 
@@ -319,42 +314,53 @@ function History() {
               resumir o máximo se não eu nunca vou terminar isso daqui.
               <br />
               <br />
-              Por volta do final do ano de 2011, a gente tava na busca de criar
-              um time pra começar a disputar os campeonatos, um deles foi a
-              <b>"AttractionZ"</b>. Nesse clan nós iamos nas salas LB7 e WGB
-              tentar recrutar uns malandros, era até engraçado porque a gente
-              ficava realmente como <b>"olheiros"</b> vendo os cara jogar.
+              Por volta do final do ano de 2011, eu e o Gulherme estavamos
+              tentando criar um time pra começar a disputar os campeonatos, um
+              deles foi o <b>"AttractionZ"</b>. Lembro que ficamos um bom tempo
+              indo em salas LB7 e WGB recrutar uns malandros, era até engraçado
+              porque a gente ficava realmente como <b>olheiros</b> vendo os cara
+              jogar.
               <br />
               <br />
               Infelizmente o Combat Arms tinha a maldita fama de ser infestado
               por <b>Hackers</b>, o que era bem verdade, mesmo os campeonatos
-              tendo alguns <b>anti-cheats</b> melhores que o da <b>Level UP</b>,
+              tendo alguns <b>anti-cheat</b> melhores que o da <b>Level UP</b>,
               não tinha como segurar essa porrada de hacks novos saindo todos os
               dias. A frase <b>"TEM TV?"</b> era bem comum na época por conta
               disso, como as salas LB7 e WGB não podiam ter um anti-cheat melhor
-              rodando do que o que vinha com jogo, utilizavamos o{' '}
-              <b>Team Viewer</b>, programa que ajudava a gente investigar o PC
-              da pessoa afim de{' '}
-              <b>encontrar uns BEN 10/programinhas do capeta</b>, pra ver se ela
-              era hacker. Método esse que a gente chegou a usar no começo pra
-              recrutar ou não recrutar alguém para o time.
+              rodando do que o que vinha o com jogo, utilizávamos o{' '}
+              <b>Team Viewer (TV)</b>, programa que ajudava a gente investigar o
+              computador da pessoa afim de{' '}
+              <b>encontrar uns BEN 10/programinhas auxiliádores</b>, assim
+              constatando se o jogador era hacker ou não.
               <br />
               <br />
-              <b>Alias eu sabia o meu código do TV até de cabeça, meu amigo.</b>
+              Investigar dessa forma não era 100% efetivo e tinha varios
+              problemas obviamente,{' '}
+              <b>um deles era quando nós mesmos eramos investigados</b>, porque
+              o medo era grande quando alguém ia vasculhar o seu computador, não
+              era por estarmos tentando esconder algum programa ou algo do tipo
+              e sim porque{' '}
+              <b>
+                dar o "controle" basicamente do seu computador todo para uma
+                pessoa que você nem conhece era complicado
+              </b>
+              . existiram diversos casos de pessoas investigadas que tiveram sua{' '}
+              <b>pasta do windows deletada</b> ferrando todo o PC.
               <br />
               <br />
-              Obviamente, mesmo utilizando esse método e vendo como os cara
+              Obviamente, mesmo utilizando esse método e vendo como as pessoas
               jogavam antes de recrutar, não dava pra ter 100% de certeza se o
               cara tava limpo ou não, só o tempo mesmo dizia. Nessas tentativas
               a gente teve alguns problemas com varios{' '}
               <b>
-                carinhas que entraram para o clan e usavam hack na nossa cara
+                carinhas que entraram para o time e usavam hack na nossa cara
                 sem dó.
               </b>
               <br />
               <br />
               Por essas e outras que a gente parou com a ideia de criar um clan
-              e ficou somente esperando a oportunidade cair do céu.
+              e ficou somente esperando a oportunidade surgir em um outro time.
             </p>
           </TextContainer>
         </WhiteContent>
@@ -363,52 +369,48 @@ function History() {
           <TextContainer>
             <h1>No dia e na hora certa</h1>
             <p>
-              Até que um belo dia, algo aconteceria que não só nos daria a
+              Em um belo dia, algo aconteceria que não só nos daria a
               oportunidade de jogar em um time mais estruturado mas cravasse no
               destino as{' '}
               <b>
-                amizades que eu levaria para vida, tiradas de dentro do jogo.
+                amizades tiradas de dentro do jogo que tanto eu quanto o
+                Guilherme levaria para vida.
               </b>
               <br />
-              <br />O mapa era <b>Sand Hog</b> em um lobby da WGB, eu estava
-              jogando sozinho nesse dia e não me lembro se eu tava jogando bem
-              ou não mas provavelmente meu{' '}
-              <b>"Deckland" permanente chamou a atenção de uma pessoa.</b>
+              <br />
+              Nesse dia conforme eu sempre fazia, iniciei uma partida em uma
+              sala fechada das ligas.O mapa era <b>Sand Hog</b> e eu estava
+              jogando sozinho. Próximo ao final da partida, um jogador me mandou
+              um <b>"sussurro"</b> me convidando para um time.
               <br />
               <br />
-              <i>
-                Deckland é um personagem do jogo que ficou permanente um dia e
-                depois foi retirado da loja, ou seja quem tinha.. tinha um
-                prestígio na quebrada.
-              </i>{' '}
-              <b>Mas obviamente não foi por isso.</b>
-              <br />
-              <br />
-              Essa pessoa era o <b>Nayerr "Expl0sioNn-"</b> do <b>ScreeN-</b>,
-              time não tão conhecido na comunidade mas já estavam a bastante
-              tempo disputando as ligas e outros confrontos entre clans. Quando
-              ele me chamou eu ja fui direto pesquisar sobre eles porque tanto
-              eu e o Guilherme tinhamos recebidos alguns outros convites mas{' '}
+              Esse jogador era o <b>Nayer</b> ou melhor <b>"Expl0sioNn-"</b> do{' '}
+              <b>ScreeN-</b>, time que não era tão conhecido na comunidade mas
+              já estavam a bastante tempo disputando as ligas e outros
+              campeonatos. Quando ele me chamou eu ja fui direto pesquisar sobre
+              eles porque tanto eu quanto o Guilherme tinhamos recebidos alguns
+              outros convites mas{' '}
               <b>
                 sempre o time tinha alguma coisa que fazia a gente desistir da
-                ideia.
+                ideia
               </b>
+              , seja por fama de membros hackers ou times mais bagunçados que o
+              nosso time que não deu certo.
               <br />
               <br />
-              Mas com eles foi diferente, logo vi que o time era sério e eles
-              tavam procurando algúem pra realmente jogar os campeonatos e
-              completar a line que tava passando por mudanças. Então antes de
-              aceitar eu mandei uma proposta pra eles de que,{' '}
+              Na pesquisa logo vi que <b>o time era sério</b> e eles tavam
+              procurando algúem pra realmente jogar os campeonatos e completar a
+              line que tava passando por mudanças.
+              <br />
+              <br />
+              Então antes de aceitar eu mandei uma proposta pra eles de que,{' '}
               <b>
-                eu só entraria para o clan se um outro amigo meu (Guilherme)
+                eu só entraria para o time se um outro amigo meu (Guilherme)
                 pudesse entrar também.
               </b>{' '}
-              <br />
-              <br />
-              Lembro até de prometer que se ele não jogasse bem,{' '}
-              <b>eles poderiam kickar a gente em seguida.</b> Felizmente, deu
-              tudo certo e a gente <b>DESTRUIU </b>nos primeiros <b>"CF"</b> ou
-              Clan Fights com eles.
+              Lembro até de prometer que se ele não jogasse bem, eles poderiam
+              kickar a gente em seguida. Felizmente, deu tudo certo e a gente{' '}
+              <b>DESTRUIU </b>nos primeiras partidas com eles.
               <br />
               <br />
               Não demorou muito pra{' '}
@@ -420,7 +422,7 @@ function History() {
               com um <b>time que estava levando o jogo bem a sério</b>.
               <br />
               <br />
-              Isso foi muito foda com certeza.
+              Isso foi muito bacana com certeza.
             </p>
           </TextContainer>
 
@@ -449,67 +451,75 @@ function History() {
           <TextContainer>
             <h1>ScreeN vs UpperClutch</h1>
             <p>
-              Conforme iamos jogando mais os campeonatos e os CF, conheciamos
-              ainda mais times da comunidade e algumas tretas ou entre players
-              ou até times inteiros rolavam,{' '}
+              Conforme iamos jogando mais os campeonatos e outros confrontos,
+              conheciamos ainda mais times da comunidade e algumas tretas ou
+              entre players ou até times inteiros aconteciam,{' '}
               <b>
-                o que era completamente normal você xingar até a ultima geração
-                da familia do inimigo por ter te matado.
+                você xingar até a ultima geração da familia do time adversário
+                por ter te matado era bem comum.
               </b>
               <br />
-              <br />
               Tanto que em uma dessas partidas jogamos contra o{' '}
-              <b>UpperClutch</b>, clan que ja tinha alguma treta com o{' '}
+              <b>UpperClutch</b>, time que ja tinha alguma treta com o{' '}
               <b>ScreeN</b> por conta de membros trocados e outras coisas que eu
               não tinha conhecimento sobre, porque era uma historia que
               aconteceu muito antes de eu entrar para o time. Na partida
               estavamos utilizando o TeamSpeak da LB7, eles disponibilizavam
-              umas salas vazias para os times que não tinham um server próprio
-              ou outra forma pra se comunicar durante o jogo.{' '}
+              umas salas vazias para os times que não tinham um servidor próprio
+              ou outra forma pra se comunicar durante o jogo. <br />
+              <br />E então pela força do destino ou sei lá o que,{' '}
               <b>
-                E pela força do destino, o time UpperClutch estava numa sala
-                logo abaixo, dentro do mesmo servidor.
+                o time UpperClutch estava em uma sala logo abaixo da gente
+                dentro do mesmo servidor.
               </b>
               <br />
               <br />
-              Depois que a partida acabou, inclusive não lembro do resultado.
+              Depois que a partida acabou, inclusive não lembro do resultado,{' '}
+              todos os membros do UpperClutch que estavam nessa sala abaixo
+              entraram na nossa sala .
+              <br />
+              <br />E pela primeira vez{' '}
               <b>
-                Todos os membros do UpperClutch que estavam na sala abaixo do TS
-                entraram na nossa
+                eu ouvi a voz dos membros do Uppercluch que em um futuro próximo
+                se tornariam os amigos que levo até hoje
               </b>
-              . E pela primeira vez eu ouvi a voz de todos eles, só que não
-              trocamos uma ideia de uma forma amigável, era só xingamentos
-              infinitos e eu sem entender nada, xinguei de volta também e dale.
+              . só que não conversamos de uma forma amigável, foi só xingamentos
+              infinitos, e eu sem entender nada xinguei de volta também e dale.
               <br />
               <br />
               <b>
-                Resumindo, todo mundo saiu do TS depois e foi isso, a gente só
-                se xingou e vazou, doideira.
+                Resumindo, todo mundo saiu do TeamSpeak depois e foi isso, a
+                gente só se xingou e vazou, tudo doido.
               </b>
               <br />
-              <br />O mais engraçado de tudo isso é que após esse ocorrido é que{' '}
+              <br />O mais engraçado de tudo isso é que após esse ocorrido{' '}
               <b>a gente começou a jogar contra quase que todos os dias</b>,
               como a gente ja se "conhecia" de alguma forma e o nivel dos dois
               times eram parecidos, as partidas eram bem disputadas e tinha dias
-              que a gente jogava varias e varias vezes contra afim de mostrar
-              quem era o melhor. Não demorou muito pra criarmos amizade com eles
-              e membros jogarem com outros contas pra completar lines pra um e
-              para o outro.
+              que a gente jogava varias e varias vezes afim de mostrar qual era
+              o melhor time.{' '}
+              <b>
+                Não demorou muito pra criarmos amizade com eles e membros
+                jogarem com outros contas pra completar lines pra um e para o
+                outro.
+              </b>
               <br />
               <br />
               Eu participando de tudo isso e começando a criar uma amizade
               também com os caras do UpperClutch,{' '}
               <b>
-                decidi ter a ideia que faria juntarmos nossas forças pra algo
+                decidi ter a ideia que faria juntarmos nossas forças para algo
                 melhor.
               </b>
               <br />
               <br />
+              Então o impensável dessa historia toda aconteceu,{' '}
               <b>
-                UpperClutch e ScreeN se juntaram, virando somente o time ScreeN
+                o UpperClutch e ScreeN se juntaram, virando somente o time
+                ScreeN
               </b>
               . Só que agora com uma quantidade absurda de membros e com o
-              propósito de criar uma super line pra amassar nas ligas a frente.
+              propósito de criar um super time pra disputar as ligas a frente.
             </p>
           </TextContainer>
         </WhiteContent>
@@ -519,49 +529,37 @@ function History() {
             <h1>Juntos mas Separados</h1>
             <p>
               Após essa fusão, a quantidade de partidas que conseguiamos jogar
-              era absurda. Pela quantidade grande nova de membros, muitas vezes
-              tinham 3 a 4 times pra jogar e uma galera ainda esperando na fila
-              de próximo, com certeza essa época foi o momento mais ativo de
-              todo o clan.
+              era absurda. Pela quantidade grande de novos membros, muitas vezes
+              tinham de 3 a 4 times pra jogar e uma galera ainda esperando na
+              fila de próximo, com certeza essa época foi o momento mais ativo
+              do time.
               <br />
               <br />
               <b>
-                Claro que com essa quantidade absurda de jogadores, algumas
-                intrigas aconteceriam..
+                Porém com essa quantidade absurda de jogadores, algumas intrigas
+                aconteceriam..
               </b>{' '}
               <br />
               <br />
               Foram varias coisas que inciaram alguns problemas, desde de
               jogadores da line principal que diminuiram bastante sua presença
               dentro do Combat Arms pra jogar o grandissimo League Of Legends e
-              até jogadores dentro do time criando outro time com a galera que
-              "ainda se considerava mais ativa".
-              <br />
-              <br />
-              <i>
-                <b>
-                  Eu fiz parte da galera que tava viciada no League Of Legends,
-                  nesse época o jogo tava em chamas e tanto eu quanto o
-                  Guilherme gostavamos de passar umas horas la mesmo ainda dando
-                  atenção para o CA.
-                </b>
-              </i>
+              até jogadores dentro do time criando um outro time paralelo com a
+              galera que <b>"ainda se considerava mais ativa"</b>.
               <br />
               <br />
               Acredito que o problema que mais atingiu o clan foi{' '}
-              <b>a sua line principal.</b> Nessa época os campeonatos estavam
-              ficando cada vez mais dificis com mais times se destacando toda
-              semana, o que fazia a gente ter que criar a line mais forte
-              possivel pra jogar contra. Um dos problemas que tinhamos eram
-              membros que tinham que estar na line mas começaram a ter alguns
-              compromissos nos dias de campeonatos, o outro problema era membros
-              da line vinda do ScreeN que mesmo depois de discutido que não
-              estariam na line principal, seja por skill ou qualquer outra coisa{' '}
-              <b>não aceitavam de jeito nenhum a ideia.</b>
+              <b>a sua line principal.</b> Os campeonatos estavam ficando cada
+              vez mais dificeis e com mais times se destacando toda semana, o
+              que fazia a gente ter que criar o time mais forte possivel pra
+              disputar as ligas, <b>ocasionando mudanças no time principal</b>.
+              Mudanças que tiraram membros que faziam parte desse time principal
+              la no ScreeN antes da junção, obviamente alguns deles{' '}
+              <b>não aceitavam de jeito nenhum a ideia de alterar o time.</b>{' '}
               <br />
-              <br />
+              <br />E aqui começou a ficar um pouco dificil as relações e
+              praticamente ouve{' '}
               <b>
-                E aqui começou a azedar um pouco as relações e praticamente ouve
                 uma divisão do clan entre o antigo ScreeN e o UpperClutch
                 novamente.
               </b>
@@ -569,15 +567,12 @@ function History() {
               <br />
               Um fato interessante sobre esses dois times que ainda não citei é
               que <b>a maior parte do clan ScreeN residiam no Nordeste</b>,
-              enquanto{' '}
-              <b>
-                todos do UpperClutch eram de São paulo e assustadoramente
-                estavam MUITO perto da onde eu e o Guilherme moramos até hoje
-              </b>
-              . Esse detalhe fez com que a gente se aproximasse bastante da
-              galera do UpperClutch, tanto pelos encontros que rolaram mas
-              principalmente por concordarmos das mesmas coisas que estavam
-              rolando no momento.
+              enquanto <b>todos do UpperClutch eram de São paulo</b> e
+              assustadoramente estavam MUITO perto da onde eu e o Guilherme
+              moramos até hoje. Esse detalhe fez com que a gente se aproximasse
+              bastante da galera do UpperClutch, tanto pelos encontros que
+              rolaram mas também por concordarmos das mesmas coisas que estavam
+              acontecendo no momento.
               <br />
               <br />
               Mais ou menos na metade do ano de 2012,{' '}
@@ -585,8 +580,8 @@ function History() {
                 uma treta maior aconteceu e o clan se dividiu agora pra valer
               </b>
               . Com essa divisão, membros antigos do ScreeN se mantiveram la
-              enquanto uma boa parte dos membros vieram para o UpperClutch, isso
-              com eu e o Guilherme inclusos nisso.
+              enquanto uma boa parte dos membros vieram para o UpperClutch,{' '}
+              <b>isso com eu e o Guilherme inclusos.</b>
               <br />
               <br />
               Nessa saída, decidimos criar novamente o <b>UpperClutch</b>, time
@@ -651,13 +646,13 @@ function History() {
               .
               <br />
               <br />
-              Mas a gente sabia dar valor e{' '}
-              <b>comemorava qualquer pequena vitoria</b>. Juntos a gente se
-              divertia muito, ganhando relevância a cada campeonato a cada Clan
-              Fight e batendo de frente muitas vezes com times grandes do
-              cenário,{' '}
+              Mas a gente sabia dar valor a <b> qualquer pequena vitoria</b>.
+              Juntos a gente se divertia muito, ganhando relevância a cada
+              campeonato e cada partida, batendo de frente muitas vezes com
+              times grandes do cenário,{' '}
               <b>
                 conseguindo ser reconhecidos na comunidade e até em outros jogos
+                quando tivemos a migração pro Counter-Strike
               </b>
               .
               <br />
@@ -672,7 +667,7 @@ function History() {
             <h1>UpperClutch para sempre</h1>
             <p>
               O time jogou junto o Combat Arms de 2012 até mais ou menos metade
-              do ano de 2015 onde migramos do CA para o Counter-Strike: Global
+              do ano de 2015, onde migramos para o Counter-Strike: Global
               Offensive que jogamos e acompanhamos até hoje.
               <br />
               <br />
@@ -703,9 +698,9 @@ function History() {
               alt="Clan Upperclutch Atualmente"
               onClick={toggle}
             />
-            <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
-              Clan Upperclutch Atualmente
-            </figcaption>
+            <figcaption
+              style={{ textAlign: 'center', fontStyle: 'italic' }}
+            ></figcaption>
           </ImgContainer>
         </BlackContent>
       </HistoryContent>

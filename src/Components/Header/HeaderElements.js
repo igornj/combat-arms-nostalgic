@@ -1,10 +1,7 @@
-/* eslint-disable no-unused-vars */
 import styled from 'styled-components';
 import Headerbg from '../../Assets/lucask4uz3.png';
 
-import { Link } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
-import { HashLink as LinkH } from 'react-router-hash-link';
 import {
   AiOutlineTwitter,
   AiOutlineInstagram,
@@ -32,7 +29,9 @@ export const NavElements = styled.div`
   width: 100%;
 `;
 
-export const Logo = styled(Link)`
+export const Logo = styled.div`
+  cursor: pointer;
+
   img {
     width: 40px;
     border-radius: 50px;
