@@ -44,7 +44,7 @@ function Sidebar({ isOpen, toggle }) {
           </SidebarLink>
           <SidebarLink
             smooth
-            duration={1000}
+            duration={1500}
             offset={-100}
             onClick={toggle}
             to="musica"
