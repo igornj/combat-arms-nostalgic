@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { animateScroll as scroll } from 'react-scroll';
 
 import { useAuth } from '../../Context/AuthContext';
 
@@ -11,17 +12,63 @@ function Sidebar({ isOpen, toggle }) {
   const openHistorySection = () => {
     setisHistoryOpen(!isHistoryOpen);
   };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <div aria-hidden="true" onClick={toggle}>
       <SidebarContainer isOpen={isOpen}>
         <SidebarMenu>
-          <SidebarLink to="/">Inicio</SidebarLink>
-          <SidebarLink to="historia" onClick={openHistorySection}>
+          <SidebarLink
+            onClick={() => {
+              toggle();
+              scrollToTop();
+            }}
+            to="/"
+            smooth
+            duration={1000}
+          >
+            Inicio
+          </SidebarLink>
+          <SidebarLink
+            to="historia"
+            onClick={() => {
+              openHistorySection();
+              toggle();
+            }}
+            smooth
+            duration={1000}
+          >
             Historia
           </SidebarLink>
-          <SidebarLink to="musica">Músicas</SidebarLink>
-          <SidebarLink to="video">Videos</SidebarLink>
-          <SidebarLink to="sobre">Sobre</SidebarLink>
+          <SidebarLink
+            smooth
+            duration={1000}
+            offset={-100}
+            onClick={toggle}
+            to="musica"
+          >
+            Músicas
+          </SidebarLink>
+          <SidebarLink
+            smooth
+            duration={1000}
+            offset={-100}
+            onClick={toggle}
+            to="video"
+          >
+            Videos
+          </SidebarLink>
+          <SidebarLink
+            smooth
+            duration={1000}
+            offset={-100}
+            onClick={toggle}
+            to="sobre"
+          >
+            Sobre
+          </SidebarLink>
         </SidebarMenu>
       </SidebarContainer>
     </div>

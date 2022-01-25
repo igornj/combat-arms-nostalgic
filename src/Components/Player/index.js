@@ -22,7 +22,7 @@ import tracks from './songsDescription';
 
 function Player() {
   const [isPlaying, setisPlaying] = useState(false);
-  const [isShuffled, setisShuffled] = useState(false);
+  const [isShuffled, setisShuffled] = useState(true);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [songIndex, setSongIndex] = useState(0);
@@ -38,17 +38,20 @@ function Player() {
   //   progressBar.current.max = seconds;
   // }, [songIndex, audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
 
-  //When the component mount, the volume is set low
+  //When the component mount, the volume is set low and checks if is shuffled
   useEffect(() => {
     audioPlayer.current.volume = 2 / 100
+    if (isShuffled) {
+      setSongIndex(shuffledIndex());
+    }
   }, []);
 
   //When the audio ends, play the next one automatically
   useEffect(() => {
-    audioPlayer?.current?.addEventListener('ended', () => {
+    audioPlayer?.current?.addEventListener('ended', async () => {
       if (isShuffled === false && songIndex <= tracks.length) {
         setSongIndex(songIndex + 1)
-        const playPromise = audioPlayer.current.play();
+        const playPromise = await audioPlayer.current.play();
 
         if (playPromise !== undefined) {
           playPromise.then(_ => {
@@ -58,7 +61,7 @@ function Player() {
               console.log(error)
             })
         }
-      } else {
+      } else if (isShuffled === false && songIndex >= tracks.length) {
         setSongIndex(0)
         const playPromise = audioPlayer.current.play();
 
@@ -73,9 +76,9 @@ function Player() {
       }
 
     });
-    // return () => {
-    //   audioPlayer?.current?.removeEventListener('ended', console.log('removed event listener'));
-    // };
+    return () => {
+      audioPlayer?.current?.removeEventListener('ended', nextSong);
+    };
   }, [songIndex, audioPlayer?.current?.readyState]);
 
 
@@ -111,10 +114,11 @@ function Player() {
     progressBar.current.max = seconds;
   }
 
-  const handleAudio = () => {
+  const handleAudio = async () => {
     setisPlaying(!isPlaying);
 
     if (!isPlaying) {
+      await audioPlayer.current.readyState;
       audioPlayer.current.play();
       animationRef.current = requestAnimationFrame(whilePlaying)
     } else {
@@ -125,7 +129,7 @@ function Player() {
 
 
   const whilePlaying = () => {
-    progressBar.current.value = audioPlayer.current.currentTime;
+    progressBar.current.value = audioPlayer.current.currentTime ? audioPlayer.current.currentTime : 0;
     changePlayerCurrentTime();
     animationRef.current = requestAnimationFrame(whilePlaying);
   };
@@ -141,10 +145,10 @@ function Player() {
       setSongIndex(songIndex - 1);
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
+      setisPlaying(true);
     } else {
-      setSongIndex(0)
-      await audioPlayer.current.readyState;
-      audioPlayer.current.play();
+      setSongIndex(0);
+      setisPlaying(true);
     }
   }
 
@@ -153,8 +157,14 @@ function Player() {
       setSongIndex(songIndex + 1);
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
+      setisPlaying(true);
     } else if (songIndex >= 0 && songIndex < tracks.length && isShuffled) {
       setSongIndex(shuffledIndex());
+      await audioPlayer.current.readyState;
+      audioPlayer.current.play();
+      setisPlaying(true)
+    } else if (songIndex > tracks.length) {
+      setSongIndex(0);
       await audioPlayer.current.readyState;
       audioPlayer.current.play();
       setisPlaying(true)
@@ -201,7 +211,7 @@ function Player() {
 
       <Info>
         <Controls>
-          <Shuffle isshuffled={isShuffled} onClick={() => setisShuffled(!isShuffled)} />
+          <Shuffle $isshuffled={isShuffled} onClick={() => setisShuffled(!isShuffled)} />
           <Prev onClick={prevSong} />
           {isPlaying ? (
             <Pause onClick={handleAudio} />

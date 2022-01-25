@@ -87,7 +87,7 @@ export const Next = styled(BiSkipNext)`
   }
 `;
 export const Shuffle = styled(BiShuffle)`
-  color: ${({ isshuffled }) => (isshuffled ? 'white' : '#b5b5b5')};
+  color: ${({ $isshuffled }) => ($isshuffled ? 'white' : '#b5b5b5')};
   cursor: pointer;
   font-size: 1.2rem;
   :hover {

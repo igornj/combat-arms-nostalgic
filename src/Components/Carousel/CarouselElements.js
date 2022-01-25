@@ -16,6 +16,8 @@ export const CarouselImgs = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1150px;
+  overflow: hidden;
 
   div {
     background: #0a0a0a;
@@ -23,7 +25,8 @@ export const CarouselImgs = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   img {
@@ -41,7 +44,7 @@ export const Controls = styled.div`
   align-items: center;
   column-gap: 15rem;
   width: 100%;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 
   @media screen and (min-width: 1000px) {
     column-gap: 75rem;
