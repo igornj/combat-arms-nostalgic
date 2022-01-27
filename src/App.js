@@ -11,11 +11,12 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 import Music from './Components/Music';
 import Video from './Components/Videos';
-import { AuthProvider } from './Context/AuthContext';
+import { HistoryProvider } from './Context/HistoryContext';
+import Thanks from './Components/Thanks';
 
 function App() {
   return (
-    <AuthProvider>
+    <HistoryProvider>
       <Router>
         <GlobalStyled />
         <Header />
@@ -24,10 +25,11 @@ function App() {
         <Main />
         <Music />
         <Video />
+        <Thanks />
         <Footer />
         <Player />
       </Router>
-    </AuthProvider>
+    </HistoryProvider>
   );
 }
 

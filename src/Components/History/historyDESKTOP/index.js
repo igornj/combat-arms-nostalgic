@@ -167,7 +167,7 @@ function HistoryDesktop() {
           <ImgContainer>
             <img
               src={catImg09}
-              alt="Alan na esquerda e eu na direita."
+              alt="(Imagem da internet) Salas com as regras LB7"
               onClick={toggle}
             />
             <figcaption

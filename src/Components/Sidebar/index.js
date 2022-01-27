@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { animateScroll as scroll } from 'react-scroll';
 
-import { useAuth } from '../../Context/AuthContext';
+import { useHistory } from '../../Context/HistoryContext';
 
 import { SidebarContainer, SidebarLink, SidebarMenu } from './SidebarElements';
 
 function Sidebar({ isOpen, toggle }) {
-  const { isHistoryOpen, setisHistoryOpen } = useAuth();
+  const { isHistoryOpen, setisHistoryOpen } = useHistory();
 
   const openHistorySection = () => {
     setisHistoryOpen(!isHistoryOpen);

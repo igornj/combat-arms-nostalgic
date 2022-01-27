@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useAuth } from '../../Context/AuthContext';
+import { useHistory } from '../../Context/HistoryContext';
 import { animateScroll as scroll } from 'react-scroll';
 
 import logo from '../../Assets/logo.jpg';
@@ -25,7 +25,7 @@ import {
 function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [changeColor, setChangeColor] = React.useState(false);
-  const { isHistoryOpen, setisHistoryOpen } = useAuth();
+  const { isHistoryOpen, setisHistoryOpen } = useHistory();
 
   useEffect(() => {
     window.addEventListener('scroll', onScroll);

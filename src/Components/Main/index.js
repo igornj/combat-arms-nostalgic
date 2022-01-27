@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { MainContainer, HistoryBtn } from './MainElements';
-import { useAuth } from '../../Context/AuthContext';
+import { useHistory } from '../../Context/HistoryContext';
 
 //components
 import History from '../History';
 
 function Main() {
   const [historia, setHistoria] = React.useState(false);
-  const { isHistoryOpen, setisHistoryOpen } = useAuth();
+  const { isHistoryOpen, setisHistoryOpen } = useHistory();
 
   return (
     <MainContainer id="historia">
