@@ -72,7 +72,6 @@ export const WhiteContent = styled.div`
     font-weight: 200;
     text-align: left;
     margin: 6rem 4rem 1rem 4rem;
-
   }
 
   p {
@@ -110,7 +109,10 @@ export const ImgContainer = styled.div`
     max-width: 80%;
     border-radius: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
   }
+
+  .fullscreen
 
   figcaption {
     font-style: italic;
@@ -129,16 +131,37 @@ export const ImgContainer = styled.div`
 
 
 
-// export const ImgFullScreen = styled.div`
-//   position: absolute;
-//   top: 0;
-//   background:  rgba(0,0,0,0.8);
-//   width: 100%;
-//   height: 100vh;
-//   z-index: 9999;
+export const ImgFullScreen = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:  rgba(0,0,0,0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
 
-//   img{
-//     width: 200px;
-//   }
+  img {
+    width: 85%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
 
-// `;
+  figcaption {
+    position: absolute;
+    bottom: 1rem;
+    color: red;
+    background:  #0a0a0a;
+    padding : 1rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-style: italic;
+    color: #0a0a0a;
+    margin: 0 1rem;
+  }
+`;

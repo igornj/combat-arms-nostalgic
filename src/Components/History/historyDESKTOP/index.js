@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import {
@@ -7,6 +8,7 @@ import {
   WhiteContent,
   TextContainer,
   ImgContainer,
+  ImgFullScreen,
 } from '../HistoryElements';
 
 //images
@@ -23,13 +25,13 @@ import catImg08 from '../../../Assets/09.jpg';
 import catImg09 from '../../../Assets/10.jpg';
 
 function HistoryDesktop() {
-  const [toggleImg, setToggleImg] = React.useState(false);
+  const [isClicked, setIsClicked] = React.useState(false);
+  const [imgId, setImgId] = React.useState('');
 
-  const toggle = () => {
-    setToggleImg(!toggleImg);
+  const handleImg = (e) => {
+    setIsClicked(!isClicked);
+    setImgId(e.target.id);
   };
-
-  //console.log(toggleImg);
 
   return (
     <HistoryContainer>
@@ -64,31 +66,78 @@ function HistoryDesktop() {
             </p>
           </TextContainer>
 
-          <ImgContainer>
-            <img
-              src={alanImg}
-              alt="Alan na esquerda e eu na direita."
-              onClick={toggle}
-            />
-            <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
-              Meu amigo Alan na esquerda e eu na direita.
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img01' ? (
+            <ImgFullScreen>
+              <img
+                src={alanImg}
+                alt="Alan na esquerda e eu na direita."
+                onClick={(e) => handleImg(e)}
+                id="img01"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Meu amigo Alan na esquerda e eu na direita.
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={alanImg}
+                alt="Alan na esquerda e eu na direita."
+                onClick={(e) => handleImg(e)}
+                id="img01"
+              />
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                Meu amigo Alan na esquerda e eu na direita.
+              </figcaption>
+            </ImgContainer>
+          )}
         </BlackContent>
 
         <WhiteContent>
-          <ImgContainer>
-            <img src={caImg} alt="Minha primeira print dentro do jogo" />
-            <figcaption
-              style={{
-                textAlign: 'center',
-                fontStyle: 'italic',
-                color: 'black',
-              }}
-            >
-              Minha primeira print dentro do jogo com o jogador JuPanteraBR
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img02' ? (
+            <ImgFullScreen>
+              <img
+                src={caImg}
+                alt="Minha primeira print dentro do jogo"
+                onClick={(e) => handleImg(e)}
+                id="img02"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Minha primeira print dentro do jogo com o jogador JuPanteraBR
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={caImg}
+                alt="Minha primeira print dentro do jogo"
+                onClick={(e) => handleImg(e)}
+                id="img02"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'black',
+                }}
+              >
+                Minha primeira print dentro do jogo com o jogador JuPanteraBR
+              </figcaption>
+            </ImgContainer>
+          )}
+
           <TextContainer>
             <h1>O Grande "igornj"</h1>
             <p>
@@ -151,35 +200,78 @@ function HistoryDesktop() {
             </p>
           </TextContainer>
 
-          <ImgContainer>
-            <img
-              src={guiImg}
-              alt="Eu, Guilherme e o Alan em alguma estação de trem pelo mundão"
-              onClick={toggle}
-            />
-            <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
-              Eu, Guilherme e o Alan em alguma estação de trem pelo mundão
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img03' ? (
+            <ImgFullScreen>
+              <img
+                src={guiImg}
+                alt="Eu, Guilherme e o Alan em alguma estação de trem pelo mundão"
+                onClick={(e) => handleImg(e)}
+                id="img03"
+                style={{ width: '35%' }}
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Eu, Guilherme e o Alan em alguma estação de trem pelo mundão
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={guiImg}
+                alt="Eu, Guilherme e o Alan em alguma estação de trem pelo mundão"
+                onClick={(e) => handleImg(e)}
+                id="img03"
+              />
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                Eu, Guilherme e o Alan em alguma estação de trem pelo mundão
+              </figcaption>
+            </ImgContainer>
+          )}
         </BlackContent>
 
         <WhiteContent>
-          <ImgContainer>
-            <img
-              src={catImg09}
-              alt="(Imagem da internet) Salas com as regras LB7"
-              onClick={toggle}
-            />
-            <figcaption
-              style={{
-                textAlign: 'center',
-                fontStyle: 'italic',
-                color: 'black',
-              }}
-            >
-              (Imagem da internet) Salas com as regras LB7
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img04' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg09}
+                alt="(Imagem da internet) Salas com as regras LB7"
+                onClick={(e) => handleImg(e)}
+                id="img04"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                (Imagem da internet) Salas com as regras LB7
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg09}
+                alt="(Imagem da internet) Salas com as regras LB7"
+                onClick={(e) => handleImg(e)}
+                id="img04"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'black',
+                }}
+              >
+                (Imagem da internet) Salas com as regras LB7
+              </figcaption>
+            </ImgContainer>
+          )}
 
           <TextContainer>
             <h1>Buldogue 2 e Charlie 3</h1>
@@ -279,33 +371,75 @@ function HistoryDesktop() {
             </p>
           </TextContainer>
 
-          <ImgContainer>
-            <img
-              src={caImg02}
-              alt=" X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
+          {isClicked && imgId === 'img05' ? (
+            <ImgFullScreen>
+              <img
+                src={caImg02}
+                alt=" X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
               nick para Over2G"
-              onClick={toggle}
-            />
-            <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
-              X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
-              nick para "Over2G"
-            </figcaption>
-          </ImgContainer>
+                onClick={(e) => handleImg(e)}
+                id="img05"
+              />
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
+                nick para "Over2G"
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={caImg02}
+                alt=" X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
+              nick para Over2G"
+                onClick={(e) => handleImg(e)}
+                id="img05"
+              />
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
+                nick para "Over2G"
+              </figcaption>
+            </ImgContainer>
+          )}
         </BlackContent>
 
         <WhiteContent>
-          <ImgContainer>
-            <img src={catImg03} alt="Clan AttractionZ" onClick={toggle} />
-            <figcaption
-              style={{
-                textAlign: 'center',
-                fontStyle: 'italic',
-                color: 'black',
-              }}
-            >
-              No menu do jogo, ainda fazendo parte do Clan AttractionZ-
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img06' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg03}
+                alt="Clan AttractionZ"
+                onClick={(e) => handleImg(e)}
+                id="img06"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                No menu do jogo, ainda fazendo parte do Clan AttractionZ-
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg03}
+                alt="Clan AttractionZ"
+                onClick={(e) => handleImg(e)}
+                id="img06"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'black',
+                }}
+              >
+                No menu do jogo, ainda fazendo parte do Clan AttractionZ-
+              </figcaption>
+            </ImgContainer>
+          )}
 
           <TextContainer>
             <h1>Na procura de um time</h1>
@@ -426,27 +560,79 @@ function HistoryDesktop() {
             </p>
           </TextContainer>
 
-          <ImgContainer>
-            <img src={catImg04} alt="Clan ScreeN" onClick={toggle} />
-            <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
-              Minha primeira print com o clan ScreeN em uma sala no Buldogue 2
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img07' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg04}
+                alt="Clan ScreeN"
+                onClick={(e) => handleImg(e)}
+                id="img07"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Minha primeira print com o clan ScreeN em uma sala no Buldogue 2
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg04}
+                alt="Clan ScreeN"
+                onClick={(e) => handleImg(e)}
+                id="img07"
+              />
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                Minha primeira print com o clan ScreeN em uma sala no Buldogue 2
+              </figcaption>
+            </ImgContainer>
+          )}
         </BlackContent>
 
         <WhiteContent>
-          <ImgContainer>
-            <img src={catImg05} alt="ScreeN e UpperClutch" onClick={toggle} />
-            <figcaption
-              style={{
-                textAlign: 'center',
-                fontStyle: 'italic',
-                color: 'black',
-              }}
-            >
-              Membros do ScreeN- e UpperClutch juntos numa partida de Clan Fight
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img08' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg05}
+                alt="ScreeN e UpperClutch"
+                onClick={(e) => handleImg(e)}
+                id="img08"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Membros do ScreeN- e UpperClutch juntos numa partida de Clan
+                Fight
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg05}
+                alt="ScreeN e UpperClutch"
+                onClick={(e) => handleImg(e)}
+                id="img08"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'black',
+                }}
+              >
+                Membros do ScreeN- e UpperClutch juntos numa partida de Clan
+                Fight
+              </figcaption>
+            </ImgContainer>
+          )}
 
           <TextContainer>
             <h1>ScreeN vs UpperClutch</h1>
@@ -598,35 +784,77 @@ function HistoryDesktop() {
             </p>
           </TextContainer>
 
-          <ImgContainer>
-            <img
-              src={catImg06}
-              alt="Primeira partida da nova UpperClutch"
-              onClick={toggle}
-            />
-            <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
-              Primeira partida do novo UpperClutch após separação com o ScreeN
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img09' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg06}
+                alt="Primeira partida da nova UpperClutch"
+                onClick={(e) => handleImg(e)}
+                id="img09"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Primeira partida do novo UpperClutch após separação com o ScreeN
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg06}
+                alt="Primeira partida da nova UpperClutch"
+                onClick={(e) => handleImg(e)}
+                id="img09"
+              />
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                Primeira partida do novo UpperClutch após separação com o ScreeN
+              </figcaption>
+            </ImgContainer>
+          )}
         </BlackContent>
 
         <WhiteContent>
-          <ImgContainer>
-            <img
-              src={catImg07}
-              alt="Primeiro encontro do clan UpperClutch 2012"
-              onClick={toggle}
-            />
-            <figcaption
-              style={{
-                textAlign: 'center',
-                fontStyle: 'italic',
-                color: 'black',
-              }}
-            >
-              Membros do clan UpperClutch em 2013
-            </figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img10' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg07}
+                alt="Primeiro encontro do clan UpperClutch 2012"
+                onClick={(e) => handleImg(e)}
+                id="img10"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'white',
+                }}
+              >
+                Membros do clan UpperClutch em 2013
+              </figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg07}
+                alt="Primeiro encontro do clan UpperClutch 2012"
+                onClick={(e) => handleImg(e)}
+                id="img10"
+              />
+              <figcaption
+                style={{
+                  textAlign: 'center',
+                  fontStyle: 'italic',
+                  color: 'black',
+                }}
+              >
+                Membros do clan UpperClutch em 2013
+              </figcaption>
+            </ImgContainer>
+          )}
 
           <TextContainer>
             <h1>Vamos Clan!</h1>
@@ -691,17 +919,31 @@ function HistoryDesktop() {
               </i>
             </p>
           </TextContainer>
-
-          <ImgContainer>
-            <img
-              src={catImg08}
-              alt="Clan Upperclutch Atualmente"
-              onClick={toggle}
-            />
-            <figcaption
-              style={{ textAlign: 'center', fontStyle: 'italic' }}
-            ></figcaption>
-          </ImgContainer>
+          {isClicked && imgId === 'img11' ? (
+            <ImgFullScreen>
+              <img
+                src={catImg08}
+                alt="Clan Upperclutch Atualmente"
+                onClick={(e) => handleImg(e)}
+                id="img11"
+              />
+              <figcaption
+                style={{ textAlign: 'center', fontStyle: 'italic' }}
+              ></figcaption>
+            </ImgFullScreen>
+          ) : (
+            <ImgContainer>
+              <img
+                src={catImg08}
+                alt="Clan Upperclutch Atualmente"
+                onClick={(e) => handleImg(e)}
+                id="img11"
+              />
+              <figcaption
+                style={{ textAlign: 'center', fontStyle: 'italic' }}
+              ></figcaption>
+            </ImgContainer>
+          )}
         </BlackContent>
       </HistoryContent>
     </HistoryContainer>

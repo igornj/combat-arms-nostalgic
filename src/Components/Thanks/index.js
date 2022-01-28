@@ -13,8 +13,8 @@ function Thanks() {
       <ThanksText>
         <h1>Agradecimentos</h1>
         <p>
-          Toda essa historia não existiria se não fosse por algumas coisas. Que
-          mesmo sem perceber no momento, estavam marcando uma parte não só da
+          Toda essa historia não existiria se não fosse por algumas coisas, que
+          mesmo eu sem perceber no momento, estavam marcando uma parte não só da
           minha vida como de muitas outras pessoas.
           <br />
           <br />
