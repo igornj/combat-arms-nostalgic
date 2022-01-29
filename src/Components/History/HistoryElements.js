@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import styled from 'styled-components';
 import vector from '../../Assets/teste.svg';
+import { AiOutlineZoomIn } from 'react-icons/ai';
 
 export const HistoryContainer = styled.div`
   display: flex;
@@ -105,14 +106,32 @@ export const ImgContainer = styled.div`
   position: relative;
   top: 2.5rem;
 
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 10%;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
   img {
     max-width: 80%;
     border-radius: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
+    z-index: 1;
   }
 
-  .fullscreen
+  &:hover div{
+    visibility: visible;
+    opacity: 1;
+  }
 
   figcaption {
     font-style: italic;
@@ -157,11 +176,19 @@ export const ImgFullScreen = styled.div`
     bottom: 1rem;
     color: red;
     background:  #0a0a0a;
-    padding : 1rem;
+    padding : 1rem 3rem;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 200;
     font-style: italic;
-    color: #0a0a0a;
+    color: #f0f0f0;
     margin: 0 1rem;
   }
+`;
+
+
+export const ZoomIcon = styled(AiOutlineZoomIn)`
+  z-index: 3;
+  font-size: 2.5rem;
+  color: white;
 `;

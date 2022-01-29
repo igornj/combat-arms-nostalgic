@@ -9,6 +9,7 @@ import {
   TextContainer,
   ImgContainer,
   ImgFullScreen,
+  ZoomIcon,
 } from '../HistoryElements';
 
 //images
@@ -86,6 +87,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon />
+              </div>
               <img
                 src={alanImg}
                 alt="Alan na esquerda e eu na direita."
@@ -120,6 +124,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon color="black" />
+              </div>
               <img
                 src={caImg}
                 alt="Minha primeira print dentro do jogo"
@@ -221,6 +228,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon />
+              </div>
               <img
                 src={guiImg}
                 alt="Eu, Guilherme e o Alan em alguma estação de trem pelo mundão"
@@ -255,6 +265,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon color="black" />
+              </div>
               <img
                 src={catImg09}
                 alt="(Imagem da internet) Salas com as regras LB7"
@@ -387,6 +400,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon />
+              </div>
               <img
                 src={caImg02}
                 alt=" X1 vs o Guilherme, aqui ela ja tinha feito a primeira troca de
@@ -423,6 +439,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon color="black" />
+              </div>
               <img
                 src={catImg03}
                 alt="Clan AttractionZ"
@@ -580,6 +599,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon />
+              </div>
               <img
                 src={catImg04}
                 alt="Clan ScreeN"
@@ -615,6 +637,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon color="black" />
+              </div>
               <img
                 src={catImg05}
                 alt="ScreeN e UpperClutch"
@@ -804,6 +829,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon />
+              </div>
               <img
                 src={catImg06}
                 alt="Primeira partida da nova UpperClutch"
@@ -838,6 +866,9 @@ function HistoryDesktop() {
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon color="black" />
+              </div>
               <img
                 src={catImg07}
                 alt="Primeiro encontro do clan UpperClutch 2012"
@@ -927,12 +958,15 @@ function HistoryDesktop() {
                 onClick={(e) => handleImg(e)}
                 id="img11"
               />
-              <figcaption
-                style={{ textAlign: 'center', fontStyle: 'italic' }}
-              ></figcaption>
+              <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>
+                Clan Upperclutch Atualmente
+              </figcaption>
             </ImgFullScreen>
           ) : (
             <ImgContainer>
+              <div>
+                <ZoomIcon />
+              </div>
               <img
                 src={catImg08}
                 alt="Clan Upperclutch Atualmente"
