@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
 import {
   FooContainer,
@@ -11,10 +12,16 @@ import {
 } from './FooterElements';
 
 import goAhead from '../../Assets/goAhead.svg';
+import logo from '../../Assets/logo.jpg';
 
 function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooContainer>
+      <img onClick={scrollToTop} src={logo} alt="logo" />
       <Socials>
         <h1>Sociais</h1>
         <a

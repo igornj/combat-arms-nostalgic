@@ -21,11 +21,20 @@ export const FooContainer = styled.div`
     left: 50%;
     transform: translate(-50%);
   }
+
+  img {
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    transition: opacity 0.2s ease;
+  }
+  img:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const Socials = styled.div`
-  white-space: nowrap;
-
   h1 {
     font-size: 1.2rem;
     font-weight: 200;
@@ -46,6 +55,7 @@ export const Goahead = styled.div`
     width: 60px;
     filter: invert(95%) sepia(95%) saturate(22%) hue-rotate(61deg)
       brightness(106%) contrast(104%);
+    cursor: default;
   }
 `;
 

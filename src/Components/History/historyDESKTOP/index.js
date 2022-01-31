@@ -10,7 +10,7 @@ import {
   ImgContainer,
   ImgFullScreen,
   ZoomIcon,
-} from '../HistoryElements';
+} from './HistoryDesktopElements';
 
 //images
 import alanImg from '../../../Assets/00.png';

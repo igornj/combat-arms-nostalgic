@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, createContext } from 'react';
 import propTypes from 'prop-types';
 
-const HistoryContext = React.createContext();
+const HistoryContext = createContext();
 
 export function useHistory() {
   return useContext(HistoryContext);

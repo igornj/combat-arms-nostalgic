@@ -31,10 +31,14 @@ export const NavElements = styled.div`
 
 export const Logo = styled.div`
   cursor: pointer;
+  transition: opacity 0.2s ease;
 
   img {
     width: 40px;
     border-radius: 50px;
+  }
+  &:hover {
+    opacity: 0.8;
   }
 `;
 

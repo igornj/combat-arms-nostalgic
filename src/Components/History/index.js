@@ -4,7 +4,7 @@ import Media from 'react-media';
 
 //components
 import HistoryDesktop from './historyDESKTOP';
-import HistoryMobile from './historyMOBILE';
+import HistoryMobile from './historyMOBILE/';
 
 function History() {
   const [toggleImg, setToggleImg] = React.useState(false);

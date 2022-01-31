@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import styled from 'styled-components';
-import vector from '../../Assets/teste.svg';
+import vector from '../../../Assets/teste.svg';
 import { AiOutlineZoomIn } from 'react-icons/ai';
 
 export const HistoryContainer = styled.div`
@@ -126,6 +126,11 @@ export const ImgContainer = styled.div`
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
     z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  img:hover{
+    opacity: 0.7;
   }
 
   &:hover div{

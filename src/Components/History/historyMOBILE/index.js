@@ -7,7 +7,7 @@ import {
   WhiteContent,
   TextContainer,
   ImgContainer,
-} from '../HistoryElements';
+} from './HistoryMobileElements';
 
 //images
 import alanImg from '../../../Assets/00.png';

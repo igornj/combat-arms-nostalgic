@@ -31,13 +31,6 @@ function Player() {
   const progressBar = useRef();
   const animationRef = useRef();
 
-  // //Setting the duration
-  // useEffect(() => {
-  //   const seconds = Math.floor(audioPlayer.current.duration);
-  //   setDuration(seconds);
-  //   progressBar.current.max = seconds;
-  // }, [songIndex, audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
-
   //When the component mount, the volume is set low and checks if is shuffled
   useEffect(() => {
     audioPlayer.current.volume = 2 / 100
