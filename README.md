@@ -6,6 +6,7 @@ O Combat arms foi um jogo que marcou muito minha vida, seja pelos momentos incri
 Aqui você vai encontrar imagens, videos e até músicas que me marcaram na época.
 
 ## Preview
+![image](https://user-images.githubusercontent.com/78692995/157958254-03fc4495-c392-4994-8c72-0ccb8f5f8704.png)
 
 * [Vercel](https://combat-arms-nostalgic-git-master-igornj.vercel.app)
 
