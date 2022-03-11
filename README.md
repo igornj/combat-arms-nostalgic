@@ -8,7 +8,7 @@ Aqui você vai encontrar imagens, videos e até músicas que me marcaram na épo
 ## Preview
 * [Vercel](https://combat-arms-nostalgic-git-master-igornj.vercel.app)
 
-![image](https://user-images.githubusercontent.com/78692995/157958254-03fc4495-c392-4994-8c72-0ccb8f5f8704.png)
+![image](https://user-images.githubusercontent.com/78692995/157962852-8eff823c-c697-46fe-b932-a023e4140de6.png)
 
 
 
